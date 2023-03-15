@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../Constants";
@@ -9,14 +9,20 @@ import Fade from "react-reveal/Fade";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
-    
-    className="xs:w-[250px] w-full"
+    perspective={2000}
+    glareEnable={true}
+    glareMaxOpacity={0.45}
+    glareBorderRadius={"20px"}
+    glarePosition={"all"}
+    scale={1.1}
+    transitionSpeed={1500}
+    className="xs:w-[250px] w-full "
   >
     <motion.div
-      initial={{ opacity: 0, transform: "translateX(-250px)" }}
+      initial={{ opacity: 0, transform: "translateX(-20vw)" }}
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
       transition={{ duration: index * 1, type: "spring" }}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card inner-elemen"
     >
       <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
@@ -36,12 +42,18 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        initial={{ opacity: 0, transform: "translateY(-5vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0)" }}
+        transition={{ duration: 1, type: "spring" }}
+      >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.5, 1)}
+        initial={{ opacity: 0, transform: "translateY(5vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0)" }}
+        transition={{ duration: 1, type: "spring" }}
         className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]"
       >
         I'm a skilled software developer with experience in Python, Django,
@@ -51,11 +63,11 @@ const About = () => {
         to create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 justify-evenly">
+      <motion.div className="mt-20 flex flex-wrap gap-10 justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

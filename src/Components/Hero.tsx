@@ -3,28 +3,53 @@ import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
 const Hero = () => {
+  const name = "Rahul R";
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className="flex flex-col justify-center items-center mt-5">
+        <motion.div
+          initial={{ opacity: 0, transform: "translateX(-5vw)" }}
+          whileInView={{ opacity: 1, transform: "translateX(0)" }}
+          transition={{ duration: 1, type: "spring" }}
+          className="flex flex-col justify-center items-center mt-5"
+        >
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
+        </motion.div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Rahul R</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <motion.h1
+            initial={{ opacity: 0, transform: "translateY(5vw)" }}
+            whileInView={{ opacity: 1, transform: "translateY(0)" }}
+            transition={{ duration: 1, type: "spring" }}
+            className={`${styles.heroHeadText} text-white`}
+          >
+            Hi, I'm &nbsp;
+            <span className="text-[#915EFF]">Rahul R</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, transform: "translateY(5vw)" }}
+            whileInView={{ opacity: 1, transform: "translateY(0)" }}
+            transition={{ duration: 1, type: "spring" }}
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+          >
             I am a Full stack Web Developer,
             <br className="sm:block hidden" />
             with an emphasis on Responsive web designs
-          </p>
+          </motion.p>
         </div>
       </div>
-      <ComputersCanvas />
+      <motion.div
+        animate={{ opacity: [0,1,0,1] }}
+        transition={{ duration: 5, type: "spring" }}
+        className={`absolute inset-0 top-[10px]`}
+      >
+        <ComputersCanvas />
+      </motion.div>
+
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

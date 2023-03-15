@@ -1,24 +1,23 @@
 import {
-  mobile,
+  frontend,
+  uiux,
   backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
+  angular,
+  github,
+  aws,
+  django,
+  mysql,
+  postgresql,
   git,
   figma,
-  docker,
   carrent,
   jobit,
   tripguide,
-  threejs,
   python,
   shiash,
   intellecto,
@@ -47,19 +46,27 @@ const services = [
   },
   {
     title: "Web Developer",
-    icon: web,
+    icon: frontend,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "UI/UX Developer",
+    icon: uiux,
   },
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -81,36 +88,33 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Angular",
+    icon: angular,
+  },
+
+  {
+    name: "MySql",
+    icon: mysql,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "PostgreSql",
+    icon: postgresql,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "AWS",
+    icon: aws,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "GitHub",
+    icon: github,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "figma",
+    icon: figma,
   },
 ];
 
@@ -182,7 +186,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "PortFolio",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -191,12 +195,12 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
       },
     ],
     image: carrent,

@@ -17,13 +17,15 @@ const ExperienceCard = ({ experience }) => {
         background: "#1d1836",
         color: "#fff",
       }}
+      className="vertical-timeline-element--work"
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ transform: "scale(0)" }}
+          whileInView={{ transform: "scale(1)" }}
+          transition={{ duration: 1, type: "spring" }}
           className="flex justify-center items-center w-full h-full"
         >
           <img
@@ -34,7 +36,11 @@ const ExperienceCard = ({ experience }) => {
         </motion.div>
       }
     >
-      <div>
+      <motion.div
+        initial={{opacity:0, transform: "translateY(5vw)" }}
+        whileInView={{opacity:1, transform: "translateY(0px)" }}
+        transition={{ duration: .8, type: "spring" }}
+      >
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
         <p
           className="text-secondary text-[16px] font-semibold"
@@ -42,8 +48,13 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
-      </div>
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      </motion.div>
+      <motion.ul
+        initial={{ opacity: 0, transform: "translateY(5vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+        transition={{ duration: .8, type: "spring" }}
+        className="mt-5 list-disc ml-5 space-y-2"
+      >
         {experience.points.map((desc, index) => (
           <li
             key={index}
@@ -52,7 +63,7 @@ const ExperienceCard = ({ experience }) => {
             {desc}
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </VerticalTimelineElement>
   );
 };
@@ -60,7 +71,11 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        initial={{ opacity: 0, transform: "translateY(-5vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0)" }}
+        transition={{ duration: 1, type: "spring" }}
+      >
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
