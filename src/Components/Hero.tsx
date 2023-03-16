@@ -42,13 +42,9 @@ const Hero = () => {
           </motion.p>
         </div>
       </div>
-      <motion.div
-        animate={{ opacity: [0, 1, 0, 1] }}
-        transition={{ duration: 5, type: "spring" }}
-        className={`absolute inset-0 top-[10px]`}
-      >
+      
         <ComputersCanvas />
-      </motion.div>
+      
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
