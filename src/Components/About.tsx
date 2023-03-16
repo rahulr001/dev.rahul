@@ -1,11 +1,8 @@
-import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../Constants";
-import { fadeIn, textVariant } from "../Utils/Motion";
 import { SectionWraper } from "../Utils";
-import Fade from "react-reveal/Fade";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
@@ -16,13 +13,13 @@ const ServiceCard = ({ index, title, icon }) => (
     glarePosition={"all"}
     scale={1.1}
     transitionSpeed={1500}
-    className="xs:w-[250px] w-full "
+    className="xs:w-[250px] w-full"
   >
     <motion.div
       initial={{ opacity: 0, transform: "translateX(-20vw)" }}
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
       transition={{ duration: index * 1, type: "spring" }}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card inner-elemen"
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
@@ -40,6 +37,7 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+    const p = "< Introduction />";
   return (
     <>
       <motion.div
@@ -47,8 +45,8 @@ const About = () => {
         whileInView={{ opacity: 1, transform: "translateY(0)" }}
         transition={{ duration: 1, type: "spring" }}
       >
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+              <p className={styles.sectionSubText}>{ p}</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p
         initial={{ opacity: 0, transform: "translateY(5vw)" }}

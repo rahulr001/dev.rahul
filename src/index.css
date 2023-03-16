@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
     color-scheme: dark;
 }
@@ -33,17 +33,17 @@
 }
 
 .violet-gradient {
-    background: #804dee;
-    background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+    background: #4dba87;
+    background: linear-gradient(-90deg, #4dba87 0%, rgba(60, 51, 80, 0) 100%);
     background: -webkit-linear-gradient(-90deg,
-            #804dee 0%,
+            #4dba87 0%,
             rgba(60, 51, 80, 0) 100%);
 }
 
 .green-pink-gradient {
     background: "#00cea8";
-    background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    background: linear-gradient(90.13deg, #00ffd0 1.9%, #4dba87 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, #00ffd0 1.9%, #4dba87 97.5%);
 }
 
 .orange-text-gradient {

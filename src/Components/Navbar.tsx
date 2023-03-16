@@ -7,7 +7,8 @@ import { menu, close } from "../Assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-
+    const R = "< R"
+    const name="AHUL />"
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed  top-0 z-20 bg-primary`}
@@ -22,10 +23,11 @@ const Navbar = () => {
           }}
         >
           <p
-            className="text-[2vw] font-medium cursor-pointer flex"
-            style={{ color: "#75ffa9" }}
+            className="text-[2vw] cursor-pointer flex"
+            style={{ color: "#4dba87" }}
           >
-            R<span className="text-white">AHUL</span>
+            {R}
+            <span className="text-white">{name}</span>
           </p>
         </Link>
         <ul className="sm:flex flex gap-2 list-none hidden">
@@ -33,8 +35,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } font-medium  p-3 text-lg hover:text-white`}
+                active === link.title ? "text-[#4dba87]" : "text-secondary"
+              } font-medium  p-3 text-lg hover:text-[#4dba87]`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>

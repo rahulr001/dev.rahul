@@ -3,7 +3,7 @@ import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
 const Hero = () => {
-  const name = "Rahul R";
+ 
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -16,7 +16,7 @@ const Hero = () => {
           transition={{ duration: 1, type: "spring" }}
           className="flex flex-col justify-center items-center mt-5"
         >
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
+          <div className="w-5 h-5 rounded-full bg-[#4dba87]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </motion.div>
 
@@ -27,8 +27,8 @@ const Hero = () => {
             transition={{ duration: 1, type: "spring" }}
             className={`${styles.heroHeadText} text-white`}
           >
-            Hi, I'm &nbsp;
-            <span className="text-[#915EFF]">Rahul R</span>
+            Hi, I'm   
+            <span className="text-[#4dba87]"> Rahul R</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, transform: "translateY(5vw)" }}
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
       <motion.div
-        animate={{ opacity: [0,1,0,1] }}
+        animate={{ opacity: [0, 1, 0, 1] }}
         transition={{ duration: 5, type: "spring" }}
         className={`absolute inset-0 top-[10px]`}
       >

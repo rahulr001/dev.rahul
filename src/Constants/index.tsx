@@ -27,15 +27,15 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "< About />",
   },
   {
     id: "work",
-    title: "Work",
+    title: "< Work />",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "< Contact />",
   },
 ];
 
@@ -124,7 +124,7 @@ const experiences = [
     company_name: "Intellecto Global Services",
     icon: intellecto,
     iconBg: "#ffff",
-    date: "November 2022 - Present",
+    date: "{ November 2022 - Present }",
     points: [
       "Built RESTful APIs that served data to the JavaScript front-end, based on dynamically chosen user inputs that handled over 5000 concurrent users.",
       "Partnered with a developer to implement RESTful APIs in Django, enabling analytics team to increase reporting speed by 14%.",
@@ -136,7 +136,7 @@ const experiences = [
     company_name: "Shiash Info Solutions Private Limited",
     icon: shiash,
     iconBg: "#ffff",
-    date: "July 2022 - September 2022",
+    date: "{ July 2022 - September 2022 }",
     points: [
       "Developed full-stack web applications which processed, analyzed, and rendered data visually.",
       "Planned, wrote, and debugged web applications and software's with complete accuracy.",
@@ -148,7 +148,7 @@ const experiences = [
     company_name: "Infox Technology",
     icon: infox,
     iconBg: "#ffff",
-    date: "December 2021 - March 2022",
+    date: "{ December 2021 - March 2022 }",
     points: [
       "Analyzed AR, VR technologies.",
       "Developed 3D models and implemented keyframe animations.",
@@ -186,7 +186,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "PortFolio",
+    name: "PortFolio-React",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -207,20 +207,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "PortFolio-Angular",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
@@ -228,20 +228,104 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Quest Tracker",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "django",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Hotel Reservation",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Math Flash Cards",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tkinter",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Todo List",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "The Treasure Hunt",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tkinter",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canva",
         color: "pink-text-gradient",
       },
     ],

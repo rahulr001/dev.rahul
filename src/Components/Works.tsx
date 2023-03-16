@@ -16,7 +16,15 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div>
-      <Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+      <Tilt
+        scale={1.1}
+              tiltEnable={false}
+              glareEnable={true}
+              glareBorderRadius={"20px"}
+              glarePosition={"all"}
+              glareMaxOpacity={.2}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      >
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -59,6 +67,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+    const p = "< My work />";
   return (
     <>
       <motion.div
@@ -66,7 +75,7 @@ const Works = () => {
         whileInView={{ opacity: 1, transform: "translateY(0)" }}
         transition={{ duration: 1, type: "spring" }}
       >
-        <p className={`${styles.sectionSubText} `}>My work</p>
+              <p className={`${styles.sectionSubText} `}>{ p}</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -75,7 +84,7 @@ const Works = () => {
           initial={{ opacity: 0, transform: "translateY(5vw)" }}
           whileInView={{ opacity: 1, transform: "translateY(0)" }}
           transition={{ duration: 1, type: "spring" }}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-1xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
