@@ -49,7 +49,7 @@ const About = () => {
       <Fade right big  cascade>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </Fade>
-        <div className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]">
+        <div   className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]">
       <Fade bottom cascade>
           I'm a skilled software developer with experience in Python, Django,
           HTML5, CSS3, TypeScript, JavaScript, React, MySQL, PostgreSQL and AWS.
