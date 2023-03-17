@@ -7,8 +7,8 @@ import { menu, close } from "../Assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-    const R = "< R"
-    const name="AHUL />"
+  const R = "< R";
+  const name = "AHUL />";
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed  top-0 z-20 bg-primary`}
@@ -23,7 +23,7 @@ const Navbar = () => {
           }}
         >
           <p
-            className="text-[2vw] cursor-pointer flex"
+            className="text-[2rm] sm:text-[2rem] cursor-pointer flex"
             style={{ color: "#4dba87" }}
           >
             {R}

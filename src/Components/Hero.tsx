@@ -2,50 +2,40 @@ import React from "react";
 import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
+import Fade from "react-reveal";
 const Hero = () => {
- 
-
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <motion.div
-          initial={{ opacity: 0, transform: "translateX(-5vw)" }}
-          whileInView={{ opacity: 1, transform: "translateX(0)" }}
-          transition={{ duration: 1, type: "spring" }}
-          className="flex flex-col justify-center items-center mt-5"
-        >
-          <div className="w-5 h-5 rounded-full bg-[#4dba87]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </motion.div>
+        <Fade left >
+          <div className="flex flex-col justify-center items-center mt-5">
+            <div className="w-5 h-5 rounded-full bg-[#4dba87]" />
+            <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          </div>
+        </Fade>
 
         <div>
-          <motion.h1
-            initial={{ opacity: 0, transform: "translateY(5vw)" }}
-            whileInView={{ opacity: 1, transform: "translateY(0)" }}
-            transition={{ duration: 1, type: "spring" }}
-            className={`${styles.heroHeadText} text-white`}
-          >
-            Hi, I'm   
-            <span className="text-[#4dba87]"> Rahul R</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, transform: "translateY(5vw)" }}
-            whileInView={{ opacity: 1, transform: "translateY(0)" }}
-            transition={{ duration: 1, type: "spring" }}
-            className={`${styles.heroSubText} mt-2 text-white-100`}
-          >
-            I am a Full stack Web Developer,
-            <br className="sm:block hidden" />
-            with an emphasis on Responsive web designs
-          </motion.p>
+          <Fade top >
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm
+              <Fade top big cascade>
+                <span className=" text-[#4dba87]"> Rahul R</span>
+              </Fade>
+            </h1>
+          </Fade>
+
+          <div className={`${styles.heroSubText} mt-2 text-white-100`}>
+            <Fade bottom cascade> 
+              I am a Full stack Web Developer,
+              {/* <br className="sm:block hidden" /> */}
+              with an emphasis on Responsive web designs
+            </Fade>
+          </div>
         </div>
       </div>
-      
         <ComputersCanvas />
-      
-
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

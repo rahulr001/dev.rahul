@@ -8,6 +8,8 @@ import { styles } from "../style";
 import { experiences } from "../Constants";
 import { SectionWraper } from "../Utils";
 import "react-vertical-timeline-component/style.min.css";
+import Fade from "react-reveal";
+
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -64,17 +66,15 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
-    const p = "< What I have done so far />";
+  const p = "< What I have done so far />";
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, transform: "translateY(-5vw)" }}
-        whileInView={{ opacity: 1, transform: "translateY(0)" }}
-        transition={{ duration: 1, type: "spring" }}
-      >
-              <p className={styles.sectionSubText}>{ p}</p>
+      <Fade top big cascade>
+        <p className={styles.sectionSubText}>{p}</p>
+      </Fade>
+      <Fade right big cascade>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+      </Fade>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (

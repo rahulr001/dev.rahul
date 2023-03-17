@@ -5,6 +5,7 @@ import { styles } from "../style";
 import { github } from "../Assets";
 import { projects } from "../Constants";
 import { SectionWraper } from "../Utils";
+import Fade from "react-reveal";
 
 const ProjectCard = ({
   index,
@@ -18,18 +19,18 @@ const ProjectCard = ({
     <motion.div>
       <Tilt
         scale={1.1}
-              tiltEnable={false}
-              glareEnable={true}
-              glareBorderRadius={"20px"}
-              glarePosition={"all"}
-              glareMaxOpacity={.2}
+        tiltEnable={false}
+        glareEnable={true}
+        glareBorderRadius={"20px"}
+        glarePosition={"all"}
+        glareMaxOpacity={0.2}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[150px]">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-40 object-cover rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -67,33 +68,26 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-    const p = "< My work />";
+  const p = "< My work />";
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, transform: "translateY(-5vw)" }}
-        whileInView={{ opacity: 1, transform: "translateY(0)" }}
-        transition={{ duration: 1, type: "spring" }}
-      >
-              <p className={`${styles.sectionSubText} `}>{ p}</p>
+      <Fade top big cascade>
+        <p className={`${styles.sectionSubText} `}>{p}</p>
+      </Fade>
+      <Fade right big cascade>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
-
+      </Fade>
       <div className="w-full flex">
-        <motion.p
-          initial={{ opacity: 0, transform: "translateY(5vw)" }}
-          whileInView={{ opacity: 1, transform: "translateY(0)" }}
-          transition={{ duration: 1, type: "spring" }}
-          className="mt-3 text-secondary text-[17px] max-w-1xl leading-[30px]"
-        >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </motion.p>
+        <p className="mt-3 text-secondary text-[17px] max-w-1xl leading-[30px]">
+          <Fade bottom cascade>
+            Following projects showcases my skills and experience through
+            real-world examples of my work. Each project is briefly described
+            with links to code repositories and live demos in it. It reflects my
+            ability to solve complex problems, work with different technologies,
+            and manage projects effectively.
+          </Fade>
+        </p>
       </div>
-
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

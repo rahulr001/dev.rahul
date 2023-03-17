@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../Constants";
 import { SectionWraper } from "../Utils";
+import Fade from "react-reveal";
+import Zoom from "react-reveal";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
@@ -16,9 +18,10 @@ const ServiceCard = ({ index, title, icon }) => (
     className="xs:w-[250px] w-full"
   >
     <motion.div
+    
       initial={{ opacity: 0, transform: "translateX(-20vw)" }}
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
-      transition={{ duration: index * 1, type: "spring" }}
+      transition={{ duration: index * 2, type: "spring" }}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
@@ -37,35 +40,31 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-    const p = "< Introduction />";
+  const p = "< Introduction />";
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, transform: "translateY(-5vw)" }}
-        whileInView={{ opacity: 1, transform: "translateY(0)" }}
-        transition={{ duration: 1, type: "spring" }}
-      >
-              <p className={styles.sectionSubText}>{ p}</p>
+      <Fade top big cascade>
+        <p className={styles.sectionSubText}>{p}</p>
+      </Fade>
+      <Fade right big  cascade>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-      <motion.p
-        initial={{ opacity: 0, transform: "translateY(5vw)" }}
-        whileInView={{ opacity: 1, transform: "translateY(0)" }}
-        transition={{ duration: 1, type: "spring" }}
-        className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]"
-      >
-        I'm a skilled software developer with experience in Python, Django,
-        HTML5, CSS3, TypeScript, JavaScript, React, MySQL, PostgreSQL and AWS.
-        And also Experienced in developing Font-end web Applications and
-        RESTfull API's. I'm a quick learner and collaborate closely with clients
-        to create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-      <motion.div className="mt-20 flex flex-wrap gap-10 justify-evenly">
+      </Fade>
+        <div className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]">
+      <Fade bottom cascade>
+          I'm a skilled software developer with experience in Python, Django,
+          HTML5, CSS3, TypeScript, JavaScript, React, MySQL, PostgreSQL and AWS.
+          And also Experienced in developing Font-end web Applications and
+          RESTfull API's. I'm a quick learner and collaborate closely with
+          clients to create efficient, scalable, and user-friendly solutions
+          that solve real-world problems. Let's work together to bring your
+          ideas to life!
+      </Fade>
+        </div>
+      <div className="mt-20 flex flex-wrap gap-10 justify-evenly">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </motion.div>
+      </div>
     </>
   );
 };
