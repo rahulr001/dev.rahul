@@ -3,7 +3,7 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
+  
   Hero,
   Navbar,
   Tech,
@@ -23,7 +23,7 @@ function App() {
                 <Experience />
                 <Tech />
                 <Works />
-                <Feedbacks /> 
+                 
                 <div className="relative z-0">
                     <Contact />
                     <StarsCanvas/>

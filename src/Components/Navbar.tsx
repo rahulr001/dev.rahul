@@ -23,11 +23,11 @@ const Navbar = () => {
           }}
         >
           <p
-            className="text-[2rm] sm:text-[2rem] cursor-pointer flex"
+            className="text-[2rm] sm:text-[2rem] cursor-pointer flex font"
             style={{ color: "#4dba87" }}
           >
             {R}
-            <span className="text-white">{name}</span>
+            <span className="text-white font">{name}</span>
           </p>
         </Link>
         <ul className="sm:flex flex gap-2 list-none hidden">
@@ -35,11 +35,13 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-[#4dba87]" : "text-secondary"
+                active === link.title
+                  ? "text-[#4dba87]"
+                  : "text-secondary"
               } font-medium  p-3 text-lg hover:text-[#4dba87]`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a className="font" href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>

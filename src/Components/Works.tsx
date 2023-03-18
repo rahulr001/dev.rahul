@@ -78,8 +78,8 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </Fade>
       <div className="w-full flex">
-        <p className="mt-3 text-secondary text-[17px] max-w-1xl leading-[30px]">
-          <Fade bottom >
+        <p className="mt-3 text-justify text-secondary text-[17px] max-w-1xl leading-[30px]">
+          <Fade bottom>
             Following projects showcases my skills and experience through
             real-world examples of my work. Each project is briefly described
             with links to code repositories and live demos in it. It reflects my

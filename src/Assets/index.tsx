@@ -29,7 +29,11 @@ import python from "./python.svg";
 import frontend from "./front-end.png";
 import backend from "./back-end.png";
 import uiux from "./uiux.png";
+
+import pc from "./pc.png";
+
 export {
+  pc,
   logo,
   backend,
   frontend,
