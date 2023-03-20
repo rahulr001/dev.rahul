@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Fade from "react-reveal";
 import { child, fadeIn } from "../Utils/Motion";
 
-const name = [ "R", "A", "H", "U", "L", " ", "R"];
+const name = ["R", "A", "H", "U", "L", " ", "R"];
 
 const Hero = () => {
   return (
@@ -13,18 +13,34 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <Fade left>
+        <motion.div
+          initial={{
+            opacity: 0,
+            transform: "translateX(-5vw) translateY(3vw)",
+          }}
+          whileInView={{
+            opacity: 1,
+            transform: "translateX(0vw) translateY(0vw)",
+          }}
+          transition={{ duration: 1.5, type: "spring" }}
+        >
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#4dba87]" />
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
           </div>
-        </Fade>
+        </motion.div>
 
         <div>
           <motion.h1
-            // variants={fadeIn}
-            // initial="hidden"
-            // whileInView="visible"
+            initial={{
+              opacity: 0,
+              transform: "translateX(-5vw) translateY(-3vw)",
+            }}
+            whileInView={{
+              opacity: 1,
+              transform: "translateX(0vw) translateY(0vw)",
+            }}
+            transition={{ duration: 1, type: "spring" }}
             className={`${styles.heroHeadText} text-white `}
           >
             Hi, I'm
@@ -47,11 +63,21 @@ const Hero = () => {
           </motion.div>
 
           <div className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <Fade bottom>
+            <motion.div
+              initial={{
+                opacity: 0,
+                transform: "translateX(5vw) translateY(-3vw)",
+              }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateX(0vw) translateY(0vw)",
+              }}
+              transition={{ duration: 1, type: "spring" }}
+            >
               I am a Full stack Web Developer,
-              {/* <br className="sm:block hidden" /> */}
+              <br className="sm:block hidden" />
               with an emphasis on Responsive web designs
-            </Fade>
+            </motion.div>
           </div>
           <ComputersCanvas />
         </div>

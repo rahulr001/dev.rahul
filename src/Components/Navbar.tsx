@@ -3,6 +3,8 @@ import { styles } from "../style";
 import { Link } from "react-router-dom";
 import { navLinks } from "../Constants";
 import { menu, close } from "../Assets";
+import { motion } from "framer-motion";
+import Bounce from "react-reveal/Bounce";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -14,35 +16,46 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed  top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between mx-auto max-w-7xl item-center">
-        <Link
-          to="/"
-          className="flex item-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <p
-            className="text-[2rm] sm:text-[2rem] cursor-pointer flex font"
-            style={{ color: "#4dba87" }}
+        <Bounce  >
+          <Link
+            to="/"
+            className="flex item-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
           >
-            {R}
-            <span className="text-white font">{name}</span>
-          </p>
-        </Link>
+            <p
+              className="text-[2rm] sm:text-[2rem] cursor-pointer flex font"
+              style={{ color: "#4dba87" }}
+            >
+              {R}
+              <span className="text-white font">{name}</span>
+            </p>
+          </Link>
+        </Bounce>
         <ul className="sm:flex flex gap-2 list-none hidden">
-          {navLinks.map((link) => (
-            <li
+          {navLinks.map((link, index) => (
+            <motion.li
+              initial={{
+                opacity: 0,
+                transform: "translateX(-5vw) translateY(-3vw)",
+              }}
+              whileInView={{
+                opacity: 1,
+                transform: "translateX(0vw) translateY(0vw)",
+              }}
+              transition={{ duration: index * 1, type: "spring" }}
               key={link.id}
               className={`${
-                active === link.title
-                  ? "text-[#4dba87]"
-                  : "text-secondary"
+                active === link.title ? "text-[#4dba87]" : "text-secondary"
               } font-medium  p-3 text-lg hover:text-[#4dba87]`}
               onClick={() => setActive(link.title)}
             >
-              <a className="font" href={`#${link.id}`}>{link.title}</a>
-            </li>
+              <a className="font" href={`#${link.id}`}>
+                {link.title}
+              </a>
+            </motion.li>
           ))}
         </ul>
         <div className="sm:hidden vd flex flex-1 justify-end items-center">

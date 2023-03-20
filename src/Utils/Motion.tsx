@@ -24,7 +24,7 @@ export const fadeIn = {
   visible: (i = 1) => ({
     opacity: 1,
     x: 0,
-    transition: { staggerChildren: 0.1*i, delayChildren: 0.1 * i },
+    transition: { staggerChildren: 0.10*i, delayChildren: 0.1 * i },
   }),
 };
 
