@@ -1,4 +1,3 @@
-import { transform } from "framer-motion";
 import { useEffect, useState } from "react";
 import { pc } from "../../Assets";
 
@@ -16,9 +15,17 @@ const ComputersCanvas = () => {
     };
   }, []);
   return (
-    <div style={{ transform: isMobile ? "scale(1.5)" : "" ,marginTop:isMobile?"40px":""}}>
-      <img src={pc} />
-    </div>
+    <img
+      alt="pc"
+      style={{
+        transform: isMobile ? "scale(1.5)" : "",
+        marginTop: isMobile ? "40px" : "",
+        position: isMobile ? "absolute" : "static",
+        width: isMobile ? "65%" : "100%",
+        left: isMobile ? "3.5rem" : "",
+      }}
+      src={pc}
+    />
   );
 };
 

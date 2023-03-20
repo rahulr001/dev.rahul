@@ -3,7 +3,6 @@ import {
   About,
   Contact,
   Experience,
-  
   Hero,
   Navbar,
   Tech,
@@ -15,17 +14,17 @@ function App() {
     return (
         <Router>
             <div className="relative z-0 bg-primary">
-                <div className="bg-hero-pattrn bg-cover bg-no-repeat bg-center">
+                {/* <div className="bg-hero-pattrn bg-cover bg-no-repeat bg-center"> */}
                     <Navbar />
                     <Hero/>
-                </div>
-                <About />
-                <Experience />
+                {/* </div> */}
+                {/* <About /> */}
+                {/* <Experience /> */}
                 {/* <Tech /> */}
-                <Works />
+                {/* <Works /> */}
                  
                 <div className="relative z-0">
-                    <Contact />
+                    {/* <Contact /> */}
                     <StarsCanvas/>
                 </div>
             </div>

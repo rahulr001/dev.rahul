@@ -8,7 +8,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const R = "< R";
-  const name = "AHUL />";
+  const name = "ahul />";
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed  top-0 z-20 bg-primary`}

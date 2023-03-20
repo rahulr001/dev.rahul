@@ -3,6 +3,10 @@ import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
 import Fade from "react-reveal";
+import { child, fadeIn } from "../Utils/Motion";
+
+const name = [ "R", "A", "H", "U", "L", " ", "R"];
+
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -17,17 +21,33 @@ const Hero = () => {
         </Fade>
 
         <div>
-          <Fade top>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm
-              <Fade top big cascade>
-                <span className=" text-[#4dba87]"> Rahul R</span>
-              </Fade>
-            </h1>
-          </Fade>
+          <motion.h1
+            // variants={fadeIn}
+            // initial="hidden"
+            // whileInView="visible"
+            className={`${styles.heroHeadText} text-white `}
+          >
+            Hi, I'm
+          </motion.h1>
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            className={`${styles.heroHeadText} text-white flex `}
+          >
+            {name.map((name, index) => (
+              <motion.span
+                key={index}
+                variants={child}
+                className=" text-[#4dba87]"
+              >
+                {name === " " ? "\u00A0" : name}
+              </motion.span>
+            ))}
+          </motion.div>
 
           <div className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <Fade bottom cascade>
+            <Fade bottom>
               I am a Full stack Web Developer,
               {/* <br className="sm:block hidden" /> */}
               with an emphasis on Responsive web designs

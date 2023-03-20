@@ -16,73 +16,37 @@ export const textVariant = (delay) => {
   };
 };
 
-export const fadeIn = (direction, type, delay, duration) => {
-  return {
-    hidden: {
-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
-        ease: "easeOut",
-      },
-    },
-  };
+export const fadeIn = {
+  hidden: {
+    opacity: 0,
+    x: -200,
+  },
+  visible: (i = 1) => ({
+    opacity: 1,
+    x: 0,
+    transition: { staggerChildren: 0.1*i, delayChildren: 0.1 * i },
+  }),
 };
 
-export const zoomIn = (delay, duration) => {
-  return {
-    hidden: {
-      scale: 0,
-      opacity: 0,
+export const child = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 12,
+      stiffness: 100,
     },
-    show: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: "tween",
-        delay: delay,
-        duration: duration,
-        ease: "easeOut",
-      },
+  },
+  hidden: {
+    opacity: 0,
+    x: -20,
+    y: -100,
+    transition: {
+      type: "spring",
+      damping: 12,
+      stiffness: 100,
     },
-  };
-};
-
-export const slideIn = (direction, type, delay, duration) => {
-  return {
-    hidden: {
-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
-    },
-    show: {
-      x: 0,
-      y: 0,
-      transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
-        ease: "easeOut",
-      },
-    },
-  };
-};
-
-export const staggerContainer = (staggerChildren, delayChildren) => {
-  return {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: staggerChildren,
-        delayChildren: delayChildren || 0,
-      },
-    },
-  };
+  },
 };
