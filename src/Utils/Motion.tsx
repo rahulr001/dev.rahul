@@ -19,12 +19,14 @@ export const textVariant = (delay) => {
 export const fadeIn = {
   hidden: {
     opacity: 0,
-    x: -200,
+    x: -0,
+    y: -100,
   },
   visible: (i = 1) => ({
     opacity: 1,
     x: 0,
-    transition: { staggerChildren: 0.10*i, delayChildren: 0.1 * i },
+    y: 0,
+    transition: { staggerChildren: 0.1, delayChildren: 0.2 * i },
   }),
 };
 
@@ -35,8 +37,8 @@ export const child = {
     y: 0,
     transition: {
       type: "spring",
-      damping: 12,
-      stiffness: 100,
+      damping: 10,
+      stiffness: 110,
     },
   },
   hidden: {

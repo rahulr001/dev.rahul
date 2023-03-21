@@ -13,10 +13,10 @@ const Navbar = () => {
   const name = "ahul />";
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed  top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed   top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between mx-auto max-w-7xl item-center">
-        <Bounce  >
+      <div className="w-full flex justify-between mx-auto max-w-7xl items-center">
+        <Bounce>
           <Link
             to="/"
             className="flex item-center gap-2"
@@ -25,12 +25,11 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <p
-              className="text-[2rm] sm:text-[2rem] cursor-pointer flex font"
-              style={{ color: "#4dba87" }}
-            >
+            <p className={`${styles.navText}`} style={{ color: "#cd5ff8" }}>
               {R}
-              <span className="text-white font">{name}</span>
+              <span className="text-white font text-[1rm] xxs:text[4rem]">
+                {name}
+              </span>
             </p>
           </Link>
         </Bounce>
@@ -49,7 +48,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-[#4dba87]" : "text-secondary"
-              } font-medium  p-3 text-lg hover:text-[#4dba87]`}
+              } font-medium  p-3   hover:text-[#4dba87]`}
               onClick={() => setActive(link.title)}
             >
               <a className="font" href={`#${link.id}`}>
