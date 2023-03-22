@@ -15,31 +15,60 @@ const ComputersCanvas = () => {
     };
   }, []);
   return (
-    <motion.img
-      initial={{
-        opacity: 0,
-        transform: "scale(0)",
-      }}
-      whileInView={{
-        opacity: 1,
-        transform: "scale(1)",
-        transition: { type: "spring", stiffness: 70, damping: 10, delay: 0.1 ,duration:1.5},
-      }}
-      whileHover={{
-        transform: "scale(.9)",
-        transition: { type: "spring", stiffness: 70, damping: 10 },
-      }}
-      alt="pc"
+    <motion.div
+        initial={{
+          opacity: 1,
+          transform: "scale(0)",
+        }}
+        whileInView={{
+          opacity: 1,
+          transform: "scale(1)",
+          transition: {
+            type: "spring",
+            stiffness: 50,
+            damping: 10,
+            delay: 0.1,
+            duration: 5,
+          },
+        }}
       style={{
         // transform: isMobile ? "scale(6)" : "",
-        marginTop: isMobile ? "40vh" : "2vw",
-        marginLeft: isMobile ? "0vh" : "7vw",
-        position: isMobile ? "absolute" : "relative",
-        width: isMobile ? "90%" : "80%",
-        left: isMobile ? "1.5rem" : "",
+        //   marginTop: isMobile ? "4vh" : "2vw",
+        //   marginLeft: isMobile ? "0vh" : "7vw",
+        display: isMobile ? "content" : "flex",
+        width: isMobile ? "90%" : "",
+        left: isMobile ? "1rem" : "",
       }}
-      src={pc}
-    />
+    >
+      <motion.img
+        initial={{
+          opacity: 1,
+          // transform: "scale(0)",
+        }}
+        animate={{
+          // opacity: 1,
+          y: [0, 10, 0],
+          scale: [1, 0.98, 1],
+          transition: {
+            type: "spring",
+            duration: 4,
+            stiffness: 100,
+            damping: 12,
+            repeat: Infinity,
+          },
+        }}
+        alt="pc"
+        style={{
+          // transform: isMobile ? "scale(6)" : "",
+          //   marginTop: isMobile ? "4vh" : "2vw",
+            marginLeft: isMobile ? "0vh" : "3vw",
+          position: isMobile ? "absolute" : "relative",
+          width: isMobile ? "90%" : "90%",
+          left: isMobile ? "1rem" : "",
+        }}
+        src={pc}
+      />
+    </motion.div>
   );
 };
 

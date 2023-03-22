@@ -9,27 +9,29 @@ import {
   Works,
   StarsCanvas,
 } from "./Components";
+import BgParticals from "./Components/canvas/BgParticals";
 
 function App() {
-    return (
-        <Router>
-            <div className="relative z-0 bg-primary">
-                {/* <div className="bg-hero-pattrn bg-cover bg-no-repeat bg-center"> */}
-                    <Navbar />
-                    <Hero/>
-                {/* </div> */}
-                {/* <About /> */}
-                {/* <Experience /> */}
-                {/* <Tech /> */}
-                {/* <Works /> */}
-                 
-                <div className="relative z-0">
-                    <Contact />
-                    <StarsCanvas/>
-                </div>
-            </div>
-      </Router>
-  )
+  return (
+    <Router>
+      <div className="relative z-0 bg-primary">
+        <BgParticals />
+
+        <Navbar />
+        <Hero />
+
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </Router>
+  );
 }
 
 export default App;

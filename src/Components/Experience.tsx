@@ -8,7 +8,7 @@ import { styles } from "../style";
 import { experiences } from "../Constants";
 import { SectionWraper } from "../Utils";
 import "react-vertical-timeline-component/style.min.css";
-import Fade from "react-reveal";
+
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -69,12 +69,11 @@ const Experience = () => {
   const p = "< What I have done so far />";
   return (
     <>
-      <Fade top big cascade>
+     
         <p className={styles.sectionSubText}>{p}</p>
-      </Fade>
-      <Fade right big cascade>
+   
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </Fade>
+  
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (

@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../Constants";
 import { SectionWraper } from "../Utils";
-import Fade from "react-reveal";
-import Zoom from "react-reveal";
+
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
@@ -48,11 +47,10 @@ const About = () => {
           {p}
         </p>
       {/* </Fade> */}
-      <Fade right big cascade>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </Fade>
+     
       <div className="mt-4 text-justify text-secondary text-[17px] max-w-7xl leading-[30px]">
-        <Fade bottom>
+       
           I'm a skilled software developer with experience in Python, Django,
           HTML5, CSS3, TypeScript, JavaScript, React, MySQL, PostgreSQL and AWS.
           And also Experienced in developing Font-end web Applications and
@@ -60,7 +58,7 @@ const About = () => {
           clients to create efficient, scalable, and user-friendly solutions
           that solve real-world problems. Let's work together to bring your
           ideas to life!
-        </Fade>
+       
       </div>
       <div className="mt-20 flex flex-wrap gap-10 justify-evenly">
         {services.map((service, index) => (
