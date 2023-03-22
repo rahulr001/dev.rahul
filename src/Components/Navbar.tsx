@@ -16,7 +16,17 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed   top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between mx-auto max-w-7xl items-center">
-        <Bounce>
+        <motion.div
+          initial={{
+            opacity: 0,
+            transform: "translateX(-5vw) translateY(-3vw)",
+          }}
+          whileInView={{
+            opacity: 1,
+            transform: "translateX(0vw) translateY(0vw)",
+          }}
+          transition={{ duration:  1.5, type: "spring" }}
+        >
           <Link
             to="/"
             className="flex item-center gap-2"
@@ -32,7 +42,7 @@ const Navbar = () => {
               </span>
             </p>
           </Link>
-        </Bounce>
+        </motion.div>
         <ul className="sm:flex flex gap-2 list-none hidden">
           {navLinks.map((link, index) => (
             <motion.li
@@ -44,7 +54,7 @@ const Navbar = () => {
                 opacity: 1,
                 transform: "translateX(0vw) translateY(0vw)",
               }}
-              transition={{ duration: index * 1, type: "spring" }}
+              transition={{ duration: index * 1.2, type: "spring" }}
               key={link.id}
               className={`${
                 active === link.title ? "text-[#4dba87]" : "text-secondary"

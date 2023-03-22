@@ -23,7 +23,7 @@ const ComputersCanvas = () => {
       whileInView={{
         opacity: 1,
         transform: "scale(1)",
-        transition: { type: "spring", stiffness: 70, damping: 10, delay: 0.1 },
+        transition: { type: "spring", stiffness: 70, damping: 10, delay: 0.1 ,duration:1.5},
       }}
       whileHover={{
         transform: "scale(.9)",

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Bubble.css";
-
+import { motion } from "framer-motion";
 const Bubble = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -26,7 +26,16 @@ const Bubble = () => {
         // left: isMobile ? "vw" : "",
       }}
     >
-      <a
+      <motion.a
+        initial={{ opacity: 0, transform: "translateY(-8vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0vw)" }}
+        transition={{
+          duration: 1.5,
+          type: "spring",
+          stiffness: 150,
+          dumping: 15,
+          delay: 0.5,
+        }}
         style={{
           //   position: isMobile ? "relative" : "absolute",
           //   top: isMobile ? "13vh" : "",
@@ -39,8 +48,17 @@ const Bubble = () => {
         className="btn"
       >
         Hair Me
-      </a>
-      <a
+      </motion.a>
+      <motion.a
+        initial={{ opacity: 0, transform: "translateY(-8vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0vw)" }}
+        transition={{
+          duration: 1.5,
+          type: "spring",
+          stiffness: 150,
+          dumping: 15,
+          delay: .7,
+        }}
         style={{
           //   position: isMobile ? "relative" : "absolute",
           //   top: isMobile ? "" : "7vh",
@@ -54,7 +72,7 @@ const Bubble = () => {
         className="btn-1"
       >
         Download Resume
-      </a>
+      </motion.a>
     </div>
   );
 };

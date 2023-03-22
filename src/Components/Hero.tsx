@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
+        className={`absolute inset-0 top-[110px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
       >
         <motion.div
           initial={{
@@ -53,7 +53,7 @@ const Hero = () => {
                 opacity: 1,
                 transform: "translateX(0vw) translateY(0vw)",
               }}
-              transition={{ duration: 1.2, type: "spring" }}
+              transition={{ duration: 1.5, type: "spring" }}
               className={`${styles.heroHeadText} text-white `}
             >
               Hi, I'm
@@ -85,7 +85,7 @@ const Hero = () => {
                   opacity: 1,
                   transform: "translateX(0vw) translateY(0vw)",
                 }}
-                transition={{ duration: 1.2, type: "spring" }}
+                transition={{ duration: 1.5, type: "spring" }}
               >
                 I am a Full stack Web Developer,
                 <br className="sm:block hidden" />
