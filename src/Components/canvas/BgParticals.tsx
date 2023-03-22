@@ -5,9 +5,7 @@ import { loadFull } from "tsparticles";
 import { Properties } from "./BgParticalsProperties";
 
 const BgParticals = () => {
-    // useEffect(() => {
-    //   window.scrollTo(0, 0);
-    // }, []);
+    
     const particlesInit = useCallback(async (engine: Engine) => {
       console.log(engine);
       await loadFull(engine);

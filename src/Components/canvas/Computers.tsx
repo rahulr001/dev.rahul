@@ -36,14 +36,14 @@ const ComputersCanvas = () => {
         //   marginTop: isMobile ? "4vh" : "2vw",
         //   marginLeft: isMobile ? "0vh" : "7vw",
         display: isMobile ? "content" : "flex",
-        width: isMobile ? "90%" : "",
-        left: isMobile ? "1rem" : "",
+        width: isMobile ? "100%" : "",
+        left: isMobile ? "-.5rem" : "",
       }}
     >
       <motion.img
         initial={{
           opacity: 1,
-          // transform: "scale(0)",
+           
         }}
         animate={{
           // opacity: 1,
@@ -59,12 +59,12 @@ const ComputersCanvas = () => {
         }}
         alt="pc"
         style={{
-          // transform: isMobile ? "scale(6)" : "",
+        //   transform: isMobile ? "scale(6)" : "",
           //   marginTop: isMobile ? "4vh" : "2vw",
             marginLeft: isMobile ? "0vh" : "3vw",
           position: isMobile ? "absolute" : "relative",
-          width: isMobile ? "90%" : "90%",
-          left: isMobile ? "1rem" : "",
+          width: isMobile ? "100%" : "90%",
+          left: isMobile ? "-1rem" : "",
         }}
         src={pc}
       />

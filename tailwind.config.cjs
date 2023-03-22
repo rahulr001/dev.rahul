@@ -7,7 +7,7 @@ module.exports = {
       colors: {
         primary: "#151221",
         secondary: "#9b7eac",
-        tertiary: "#202124",
+        tertiary: "#151221bf",
         "black-100": "#202124",
         "black-200": "#090325",
         "white-100": "#f3f3f3",

@@ -21,10 +21,11 @@ const ProjectCard = ({
         scale={1.1}
         tiltEnable={false}
         glareEnable={true}
-        glareBorderRadius={"20px"}
+        glareBorderRadius={"14px"}
         glarePosition={"all"}
         glareMaxOpacity={0.2}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        style={{ border: "#cd5ff880 2px solid" }}
       >
         <div className="relative w-full h-[150px]">
           <img

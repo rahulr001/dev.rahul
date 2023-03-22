@@ -10,7 +10,6 @@ const name = ["R", "A", "H", "U", "L", " ", "R"];
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    // window.scrollTo(0,0);
     const mediaQuery = window.matchMedia("(max-width:450px)");
     setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (event) => {

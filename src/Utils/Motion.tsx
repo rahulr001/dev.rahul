@@ -20,7 +20,7 @@ export const fadeIn = {
   hidden: {
     opacity: 0,
     x: -0,
-    y: -200,
+    y: -100,
   },
   visible: (i = 1) => ({
     opacity: 1,
