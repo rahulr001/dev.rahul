@@ -52,3 +52,18 @@ export const child = {
     },
   },
 };
+export const swing = {
+  visible: {
+    
+    y: [0, -13, 0],
+    scale: [1, 1.05, 1],
+    transition: {
+      type: "spring",
+      duration: 4,
+      stiffness: 100,
+      damping: 12,
+      repeat: Infinity,
+    },
+  },
+   
+};

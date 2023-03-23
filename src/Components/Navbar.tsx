@@ -25,7 +25,7 @@ const Navbar = () => {
             opacity: 1,
             transform: "translateX(0vw) translateY(0vw)",
           }}
-          transition={{ duration:  1.5, type: "spring" }}
+          transition={{ duration: 1.5, type: "spring" }}
         >
           <Link
             to="/"
@@ -57,8 +57,8 @@ const Navbar = () => {
               transition={{ duration: index * 1.2, type: "spring" }}
               key={link.id}
               className={`${
-                active === link.title ? "text-[#4dba87]" : "text-secondary"
-              } font-medium  p-3   hover:text-[#4dba87]`}
+                active === link.title ? "text-[white]" : "text-secondary"
+              } font-medium  p-3   hover:text-[white]`}
               onClick={() => setActive(link.title)}
             >
               <a className="font" href={`#${link.id}`}>

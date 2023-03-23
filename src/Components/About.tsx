@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../Constants";
 import { SectionWraper } from "../Utils";
-
+import { swing } from "../Utils/Motion";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
     perspective={2000}
@@ -24,21 +24,9 @@ const ServiceCard = ({ index, title, icon }) => (
     >
       <div className="bg-tertiary rounded-[20px] ">
         <motion.div
-          initial={{
-            opacity: 1,
-          }}
-          animate={{
-            // opacity: 1,
-            y: [0, -13, 0],
-            scale: [1, 1.05, 1],
-            transition: {
-              type: "spring",
-              duration: 4,
-              stiffness: 100,
-              damping: 12,
-              repeat: Infinity,
-            },
-          }}
+          variants={swing}
+          
+          animate="visible"
           className="py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img

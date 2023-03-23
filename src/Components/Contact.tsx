@@ -17,7 +17,7 @@ const Contact = () => {
   const handleSubmit = () => {};
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-5 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-8 overflow-hidden`}
     >
       <motion.div
         className="flex-[0.75] p-8 rounded-2xl "

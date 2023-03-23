@@ -15,9 +15,7 @@ import {
   postgresql,
   git,
   figma,
-  carrent,
-  jobit,
-  tripguide,
+  
   python,
   shiash,
   intellecto,
@@ -120,6 +118,7 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  
 ];
 
 const experiences = [
@@ -207,7 +206,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: carrent,
+    image: "",
     source_code_link: "https://github.com/",
   },
   {
@@ -228,7 +227,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: "jobit",
     source_code_link: "https://github.com/",
   },
   {
@@ -249,7 +248,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "tripguide",
     source_code_link: "https://github.com/",
   },
   {
@@ -270,7 +269,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "tripguide",
     source_code_link: "https://github.com/",
   },
   {
@@ -291,7 +290,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "tripguide",
     source_code_link: "https://github.com/",
   },
   {
@@ -312,7 +311,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "tripguide",
     source_code_link: "https://github.com/",
   },
   {
@@ -333,7 +332,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "tripguide",
     source_code_link: "https://github.com/",
   },
 ];

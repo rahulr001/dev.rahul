@@ -24,11 +24,11 @@ function App() {
       <div className="relative z-0 bg-primary">
         <BgParticals />
         <Navbar />
-        {/* <Hero /> */}
-        {/* <About /> */}
-        {/* <Experience /> */}
+        <Hero />
+        <About />
+        <Experience />
         <Tech />
-        {/* <Works /> */}
+        <Works />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
