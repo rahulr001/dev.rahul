@@ -26,9 +26,9 @@ const ComputersCanvas = () => {
           transition: {
             type: "spring",
             stiffness: 50,
-            damping: 10,
-            delay: 0.1,
-            duration: 5,
+            damping: 8,
+            delay: 1.5,
+            duration: 3,
           },
         }}
       style={{

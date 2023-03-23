@@ -104,7 +104,7 @@ const Bubble = () => {
           href="#"
           className="btn-1"
         >
-          Download Resume
+          View Resume
         </motion.a>
       </motion.div>
     </div>

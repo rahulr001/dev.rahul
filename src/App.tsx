@@ -12,23 +12,23 @@ import {
 import BgParticals from "./Components/canvas/BgParticals";
 import { useEffect } from "react";
 function App() {
-//   if ("scrollRestoration" in history) {
-//     history.scrollRestoration = "manual";
-//   }
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
 
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Router>
       <div className="relative z-0 bg-primary">
         <BgParticals />
         <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        {/* <Tech /> */}
-        <Works />
+        {/* <Hero /> */}
+        {/* <About /> */}
+        {/* <Experience /> */}
+        <Tech />
+        {/* <Works /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

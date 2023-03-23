@@ -22,6 +22,11 @@ const BgParticals = () => {
       id="tsparticles"
       options={{
         particles: {
+          background: {
+            color: {
+              value: "#151221",
+            },
+          },
           number: {
             value: 100,
             density: {
@@ -76,7 +81,7 @@ const BgParticals = () => {
             random: true,
             straight: true,
             out_mode: "bounce",
-            bounce: false,
+            bounce: true,
             attract: {
               enable: false,
               rotateX: 600,

@@ -12,9 +12,11 @@
     scroll-behavior: smooth;
     color-scheme: dark;
 }
-.font{
-    font-family: 'Roboto Mono', monospace!important;
+
+.font {
+    font-family: 'Roboto Mono', monospace !important;
 }
+
 .hash-span {
     margin-top: -100px;
     padding-bottom: 100px;
@@ -31,7 +33,7 @@
     background: linear-gradient(to right,
             #cd5ff8,
             #cd5ff8);
-          
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -203,4 +205,41 @@
             -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
             -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
     }
+}
+
+
+.icons {
+    overflow: hidden;
+}
+
+.icons img {
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+  
+    
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    /* add any other styling you want here */
 }
