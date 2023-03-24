@@ -24,7 +24,7 @@ const ProjectCard = ({
         glareBorderRadius={"14px"}
         glarePosition={"all"}
         glareMaxOpacity={0.2}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5  rounded-2xl sm:w-[360px] w-full"
         style={{ border: "#cd5ff880 2px solid" }}
       >
         <div className="relative w-full h-[150px]">
@@ -89,7 +89,7 @@ const Works = () => {
         
         </p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex justify-center flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

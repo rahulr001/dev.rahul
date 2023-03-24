@@ -21,7 +21,12 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section
+      style={{
+        height: isMobile ? "75vh" : "100vh",
+      }}
+      className={`relative w-full  mx-auto`}
+    >
       <div
         className={`absolute inset-0 top-[110px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
       >

@@ -44,7 +44,7 @@ export const child = {
   hidden: {
     opacity: 0,
     x: -20,
-    y: -200,
+    y: -100,
     transition: {
       type: "spring",
       damping: 12,

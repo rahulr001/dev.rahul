@@ -15,7 +15,6 @@ import {
   postgresql,
   git,
   figma,
-  
   python,
   shiash,
   intellecto,
@@ -118,7 +117,6 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  
 ];
 
 const experiences = [
@@ -131,7 +129,9 @@ const experiences = [
     points: [
       "Built RESTful APIs that served data to the JavaScript front-end, based on dynamically chosen user inputs that handled over 5000 concurrent users.",
       "Partnered with a developer to implement RESTful APIs in Django, enabling analytics team to increase reporting speed by 14%.",
-      "Tested software for bugs and operating speed, fixing bugs and documenting processes to increase efficiency by 18%.",
+      "Developed scalable and responsive web applications using React, Redux, and Tailwind-CSS.",
+      "Designed and implemented user interfaces using HTML, CSS, and Material-UI.",
+      "Utilized Git for version control and collaborated with team members on various projects.",
     ],
   },
   {
@@ -143,7 +143,8 @@ const experiences = [
     points: [
       "Developed full-stack web applications which processed, analyzed, and rendered data visually.",
       "Planned, wrote, and debugged web applications and software's with complete accuracy.",
-      "Developed full-stack web application named 'Quest Tracker' to track and maintain employee data's and to assign and manage unique employee task or project management module.",
+      "Design and develop user interfaces using HTML, CSS, and JavaScript framework Angular.",
+      "Test and debug code using tools such as Postman and Chrome DevTools.",
     ],
   },
   {
@@ -153,37 +154,11 @@ const experiences = [
     iconBg: "#ffff",
     date: "{ December 2021 - March 2022 }",
     points: [
-      "Analyzed AR, VR technologies.",
-      "Developed 3D models and implemented keyframe animations.",
-      "Developed a 3D endless runner game named 'Treasure Hunt'.",
+      "Work on a team of game developers to develop and improve existing games using Unity game engine.",
+      "Write clean, efficient, and well-documented code using C# programming language.",
+      "Participate in game design discussions and contribute ideas for game mechanics and features.",
+      "Collaborate with artists, designers, and other developers to ensure that the game meets the vision and goals of the project.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -209,6 +184,28 @@ const projects = [
     image: "",
     source_code_link: "https://github.com/",
   },
+
+  {
+    name: "Quest Tracker",
+    description:
+      "The Quest Tracker is a web application that helps users keep track of their tasks and goals. It is designed to be user-friendly and customizable, with the ability to create, edit, and delete tasks, as well as set due dates and reminders. The application also allows users to track their progress, view completed tasks, and prioritize their tasks based on their importance.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "tripguide",
+    source_code_link: "https://github.com/",
+  },
   {
     name: "PortFolio-Angular",
     description:
@@ -231,30 +228,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Quest Tracker",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "django",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "tripguide",
-    source_code_link: "https://github.com/",
-  },
-  {
     name: "Hotel Reservation",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Hotel Reservation System is a web application that allows customers to book and manage hotel reservations online. Customers can search for available hotels and rooms, view hotel amenities and details, and make online reservations. The application also includes a backend system for hotel administrators to manage hotel information, room availability, and reservations.",
     tags: [
       {
         name: "react",
@@ -275,7 +251,7 @@ const projects = [
   {
     name: "Math Flash Cards",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Math Flash Cards is a web application that helps students practice and improve their math skills. The application generates random math problems based on the user's chosen difficulty level and provides instant feedback on whether the user's answers are correct or incorrect. The application also includes a leaderboard that displays the top scores of all users.",
     tags: [
       {
         name: "python",
@@ -296,7 +272,7 @@ const projects = [
   {
     name: "Todo List",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Todo List is a web application that allows users to create and manage a list of tasks or to-do items. Users can add, delete, and edit tasks, as well as mark them as completed. The application also includes features such as filtering tasks by completion status and sorting tasks by priority or due date.",
     tags: [
       {
         name: "python",
@@ -317,7 +293,7 @@ const projects = [
   {
     name: "The Treasure Hunt",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Treasure Hunt is an endless runner game developed in Unity where the player controls a character running through an infinite environment, collecting coins and avoiding obstacles. The game includes power-ups and upgrades that the player can collect to improve their score and increase their chances of survival. The game also includes a leaderboard to track and compare players' scores.",
     tags: [
       {
         name: "python",
@@ -337,4 +313,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
