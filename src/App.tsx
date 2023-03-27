@@ -23,7 +23,7 @@ function App() {
     <Router>
       <div className="relative z-0 bg-primary">
         <BgParticals />
-        <Navbar />
+        {/* <Navbar />
         <Hero />
         <About />
         <Experience />
@@ -32,7 +32,7 @@ function App() {
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
-        </div>
+        </div> */}
       </div>
     </Router>
   );

@@ -28,7 +28,7 @@ const Hero = () => {
       className={`relative w-full  mx-auto`}
     >
       <div
-        className={`absolute inset-0 top-[110px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
+        className={`absolute inset-0 top-[60px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
       >
         <motion.div
           initial={{

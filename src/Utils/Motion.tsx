@@ -1,21 +1,3 @@
-export const textVariant = (delay) => {
-  return {
-    hidden: {
-      y: -50,
-      opacity: 0,
-    },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        duration: 1.25,
-        delay: delay,
-      },
-    },
-  };
-};
-
 export const fadeIn = {
   hidden: {
     opacity: 0,
@@ -54,7 +36,6 @@ export const child = {
 };
 export const swing = {
   visible: {
-    
     y: [0, -13, 0],
     scale: [1, 1.05, 1],
     transition: {
@@ -65,5 +46,4 @@ export const swing = {
       repeat: Infinity,
     },
   },
-   
 };
