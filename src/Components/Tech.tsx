@@ -11,7 +11,7 @@ const Tech = () => {
         <motion.div
           variants={swing}
           animate="visible"
-          className="w-24 h-24 p-2 flex justify-center items-center  rounded-full bg-[#fbf2ff]"
+          className="w-20 h-20 p-2 flex justify-center items-center  rounded-full bg-[#fbf2ff]"
           key={technology.name}
         >
           <img className="tech p-1" alt="img" src={technology.icon} />

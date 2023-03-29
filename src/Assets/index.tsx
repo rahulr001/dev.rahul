@@ -41,7 +41,19 @@ const postgresql =
 const django =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg";
 
+import resume from "./Resume.pdf";
+
+import portfolioReact from "./portfolio-react.png";
+import portfolioAngular from "./portfolioAngular.png";
+import questTracler from "./questtracker.png";
+import treasureHunt from "./treasurehunt.png";
+
 export {
+  portfolioAngular,
+  portfolioReact,
+  questTracler,
+  treasureHunt,
+  resume,
   pc,
   logo,
   backend,

@@ -17,6 +17,10 @@
     font-family: 'Roboto Mono', monospace !important;
 }
 
+.secondary-color {
+    color: aliceblue;
+}
+
 .hash-span {
     margin-top: -100px;
     padding-bottom: 100px;

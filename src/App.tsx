@@ -8,9 +8,12 @@ import {
   Tech,
   Works,
   StarsCanvas,
+ 
 } from "./Components";
 import BgParticals from "./Components/canvas/BgParticals";
 import { useEffect } from "react";
+import Statics from "./Components/Statics";
+
 function App() {
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
@@ -23,16 +26,17 @@ function App() {
     <Router>
       <div className="relative z-0 bg-primary">
         <BgParticals />
-        {/* <Navbar />
+        <Navbar />
         <Hero />
         <About />
+       {/* <Statics/> */}
         <Experience />
         <Tech />
         <Works />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
-        </div> */}
+        </div>
       </div>
     </Router>
   );

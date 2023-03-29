@@ -19,6 +19,10 @@ import {
   shiash,
   intellecto,
   infox,
+  portfolioAngular,
+  portfolioReact,
+  questTracler,
+  treasureHunt,
 } from "../Assets";
 
 export const navLinks = [
@@ -181,14 +185,14 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "",
-    source_code_link: "https://github.com/",
+    image: portfolioReact,
+    source_code_link: "https://github.com/rahulr001/dev.rahul.git",
   },
 
   {
     name: "Quest Tracker",
     description:
-      "The Quest Tracker is a web application that helps users keep track of their tasks and goals. It is designed to be user-friendly and customizable, with the ability to create, edit, and delete tasks, as well as set due dates and reminders. The application also allows users to track their progress, view completed tasks, and prioritize their tasks based on their importance.",
+      "The Quest Tracker is a web application that helps users keep track of their tasks and goals. It is designed to be user-friendly and customizable, with the ability to create, edit, and delete tasks. The application also allows users to track their progress and view completed tasks.",
     tags: [
       {
         name: "python",
@@ -203,30 +207,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "tripguide",
-    source_code_link: "https://github.com/",
+    image: questTracler,
+    source_code_link: "https://github.com/rahulr001/Quest-Tracker.git",
   },
-  {
-    name: "PortFolio-Angular",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "angular",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "jobit",
-    source_code_link: "https://github.com/",
-  },
+
   {
     name: "Hotel Reservation",
     description:
@@ -246,7 +230,8 @@ const projects = [
       },
     ],
     image: "tripguide",
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/rahulr001/Hotel-Reservation-Django-React.git",
   },
   {
     name: "Math Flash Cards",
@@ -267,33 +252,33 @@ const projects = [
       },
     ],
     image: "tripguide",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rahulr001/Math-Flash-Cards.git",
   },
   {
-    name: "Todo List",
+    name: "PortFolio-Angular",
     description:
-      "The Todo List is a web application that allows users to create and manage a list of tasks or to-do items. Users can add, delete, and edit tasks, as well as mark them as completed. The application also includes features such as filtering tasks by completion status and sorting tasks by priority or due date.",
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "python",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "django",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "mysql",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: "tripguide",
-    source_code_link: "https://github.com/",
+    image: portfolioAngular,
+    source_code_link: "https://github.com/rahulr001/Rahul-R.git",
   },
   {
     name: "The Treasure Hunt",
     description:
-      "The Treasure Hunt is an endless runner game developed in Unity where the player controls a character running through an infinite environment, collecting coins and avoiding obstacles. The game includes power-ups and upgrades that the player can collect to improve their score and increase their chances of survival. The game also includes a leaderboard to track and compare players' scores.",
+      "The Treasure Hunt is an endless runner game developed in Unity where the player controls a character running through an infinite environment, collecting coins and avoiding obstacles. The game includes power-ups and upgrades that the player can collect to improve their score and increase their chances of survival.",
     tags: [
       {
         name: "python",
@@ -308,8 +293,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "tripguide",
-    source_code_link: "https://github.com/",
+    image: treasureHunt,
+    source_code_link: "https://github.com/rahulr001/The-Treasure-Hunt.git",
   },
 ];
 

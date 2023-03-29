@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Bubble.css";
 import { motion } from "framer-motion";
+import { resume } from "../../Assets";
 const Bubble = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -101,7 +102,8 @@ const Bubble = () => {
             fontSize: isMobile ? "3vw" : "",
             //   marginLeft: isMobile ? "30vw" : "",
           }}
-          href="#"
+                  href={resume}
+                  target="_blank"
           className="btn-1"
         >
           View Resume

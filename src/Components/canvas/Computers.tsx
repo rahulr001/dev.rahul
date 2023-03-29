@@ -16,21 +16,21 @@ const ComputersCanvas = () => {
   }, []);
   return (
     <motion.div
-        initial={{
-          opacity: 1,
-          transform: "scale(0)",
-        }}
-        whileInView={{
-          opacity: 1,
-          transform: "scale(1)",
-          transition: {
-            type: "spring",
-            stiffness: 50,
-            damping: 8,
-            delay: 1.5,
-            duration: 3,
-          },
-        }}
+      initial={{
+        opacity: 0,
+        // transform: "scale(0)",
+      }}
+      whileInView={{
+        opacity: 1,
+        // transform: "scale(1)",
+        transition: {
+          type: "spring",
+          stiffness: 50,
+          damping: 8,
+          delay: 1.5,
+          duration: 5,
+        },
+      }}
       style={{
         // transform: isMobile ? "scale(6)" : "",
         //   marginTop: isMobile ? "4vh" : "2vw",
@@ -43,12 +43,11 @@ const ComputersCanvas = () => {
       <motion.img
         initial={{
           opacity: 1,
-           
         }}
         animate={{
           // opacity: 1,
-          y: [0, 10, 0],
-          scale: [1, 0.98, 1],
+          y: [0, 5, 0],
+          scale: [1, 0.99, 1],
           transition: {
             type: "spring",
             duration: 4,
@@ -59,12 +58,12 @@ const ComputersCanvas = () => {
         }}
         alt="pc"
         style={{
-        //   transform: isMobile ? "scale(6)" : "",
+          //   transform: isMobile ? "scale(6)" : "",
           //   marginTop: isMobile ? "4vh" : "2vw",
-            marginLeft: isMobile ? "0vh" : "3vw",
+          marginLeft: isMobile ? "0vh" : "3vw",
           position: isMobile ? "absolute" : "relative",
-          width: isMobile ? "100%" : "90%",
-          left: isMobile ? "-1rem" : "",
+          width: isMobile ? "100%" : "80%",
+          left: isMobile ? "-1rem" : "2rem",
         }}
         src={pc}
       />

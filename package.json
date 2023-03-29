@@ -17,6 +17,7 @@
     "@react-three/fiber": "^8.11.1",
     "firebase": "^9.18.0",
     "framer-motion": "^9.0.7",
+    "github-calendar": "^2.3.2",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

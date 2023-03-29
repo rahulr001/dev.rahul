@@ -8,6 +8,12 @@ import { styles } from "../style";
 import { experiences } from "../Constants";
 import { SectionWraper } from "../Utils";
 import "react-vertical-timeline-component/style.min.css";
+import {
+  subTitleChild,
+  subTitleFadeIn,
+  titleChild,
+  titleFadeIn,
+} from "../Utils/Motion";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -67,12 +73,84 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
-  const p = "< What I have done so far />";
+  const subText = [
+    "<",
+    " ",
+    "W",
+    "h",
+    "a",
+    "t",
+    " ",
+    "I",
+    " ",
+    "h",
+    "a",
+    "v",
+    "e",
+    " ",
+    "d",
+    "o",
+    "n",
+    "e",
+    " ",
+    "s",
+    "o",
+    " ",
+    "f",
+    "a",
+    "r",
+    " ",
+    "/",
+    ">",
+  ];
+  const title = [
+    "W",
+    "o",
+    "r",
+    "k",
+    " ",
+    "E",
+    "x",
+    "p",
+    "e",
+    "r",
+    "i",
+    "e",
+    "n",
+    "c",
+    "e",
+    ".",
+  ];
   return (
     <>
-      <p className={styles.sectionSubText}>{p}</p>
-
-      <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+      <motion.div
+        variants={subTitleFadeIn}
+        initial="hidden"
+        whileInView="visible"
+        className="flex"
+      >
+        {subText.map((name, index) => (
+          <motion.span
+            key={index}
+            variants={subTitleChild}
+            className="  sm:text-[18px] text-[14px] secondary-color font uppercase  "
+          >
+            {name === " " ? "\u00A0" : name}
+          </motion.span>
+        ))}
+      </motion.div>
+      <motion.h2
+        variants={titleFadeIn}
+        initial="hidden"
+        whileInView="visible"
+        className={`${styles.sectionHeadText} `}
+      >
+        {title.map((name, index) => (
+          <motion.span key={index} variants={titleChild}>
+            {name === " " ? "\u00A0" : name}
+          </motion.span>
+        ))}
+      </motion.h2>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
