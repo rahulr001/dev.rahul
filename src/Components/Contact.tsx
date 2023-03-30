@@ -21,7 +21,7 @@ const Contact = () => {
     >
       <motion.div
         className="flex-[0.75] p-8 rounded-2xl "
-        style={{ border: "#cd5ff880 2px solid" ,height:"95vh"}}
+        style={{ border: "#4dba87 2px solid", height: "95vh" }}
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -39,7 +39,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-[#cd5ff880] outline outline-offset-1 outline-1  border-none font-medium"
+              className="bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-[#4dba87] outline outline-offset-1 outline-1  border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -50,7 +50,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-[#cd5ff880] outline outline-offset-1 outline-1  border-none font-medium"
+              className="bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-[#4dba87] outline outline-offset-1 outline-1  border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -61,14 +61,14 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-[#cd5ff880] outline outline-offset-1 outline-1  border-none font-medium"
+              className="bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-[#4dba87] outline outline-offset-1 outline-1  border-none font-medium"
             />
           </label>
 
           <button
             type="submit"
             className="bg-tertiary mt-5 py-3 px-8 rounded-xl w-fit text-white font-bold shadow-md shadow-primary"
-            style={{ backgroundColor: "#cd5ff8" }}
+            style={{ backgroundColor: "#4dba87" }}
           >
             {isLoading ? "Sending...." : "Send"}
           </button>

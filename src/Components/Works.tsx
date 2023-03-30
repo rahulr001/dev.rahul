@@ -32,14 +32,14 @@ const ProjectCard = ({
         glarePosition={"all"}
         glareMaxOpacity={0.2}
         className="bg-tertiary p-5  rounded-2xl sm:w-[360px] w-full h-[31rem] flex flex-col justify-around"
-        style={{ border: "#cd5ff880 2px solid" }}
+        style={{ border: "#4dba87 2px solid" }}
       >
         <div className="relative w-full h-[150px]">
           <img
             src={image}
             alt="project_image"
             className="w-full h-40 object-cover rounded-2xl"
-            style={{ border: "2px solid", color: "#72388c" }}
+            style={{ border: "2px solid", color: "#4dba8780" }}
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">

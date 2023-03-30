@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon }) => (
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
       transition={{ duration: index * 2, type: "spring" }}
       className="w-full p-[1px] rounded-[20px] shadow-card"
-      style={{ border: "#cd5ff880 2px solid" }}
+      style={{ border: "#4dba87 2px solid" }}
     >
       <div className="bg-tertiary rounded-[20px] ">
         <motion.div

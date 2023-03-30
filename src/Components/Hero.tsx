@@ -33,16 +33,16 @@ const Hero = () => {
         <motion.div
           initial={{
             opacity: 0,
-            transform: "translateX(-5vw) translateY(3vw)",
+            transform: "translateX(-10vw) translateY(5vw)",
           }}
           whileInView={{
             opacity: 1,
             transform: "translateX(0vw) translateY(0vw)",
           }}
-          transition={{ duration: 2, type: "spring" }}
+          transition={{ duration: 2.5, type: "spring" }}
         >
-          <div className="flex flex-col justify-center items-center mt-5">
-            <div className="w-5 h-5 rounded-full bg-[#cd5ff8]" />
+          <div className="flex flex-col justify-center items-center  ">
+            <div className="w-5 h-5 rounded-full bg-[#4dba87]" />
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
           </div>
         </motion.div>
@@ -52,13 +52,13 @@ const Hero = () => {
             <motion.h1
               initial={{
                 opacity: 0,
-                transform: "translateX(-5vw) translateY(-3vw)",
+                transform: "translateX(-10vw) translateY(-5vw)",
               }}
               whileInView={{
                 opacity: 1,
                 transform: "translateX(0vw) translateY(0vw)",
               }}
-              transition={{ duration: 2, type: "spring" }}
+              transition={{ duration: 2.5, type: "spring" }}
               className={`${styles.heroHeadText} text-white `}
             >
               Hi, I'm
@@ -73,7 +73,7 @@ const Hero = () => {
                 <motion.span
                   key={index}
                   variants={child}
-                  className=" text-[#cd5ff8]"
+                  className=" text-[#4dba87]"
                 >
                   {name === " " ? "\u00A0" : name}
                 </motion.span>
@@ -84,13 +84,13 @@ const Hero = () => {
               <motion.div
                 initial={{
                   opacity: 0,
-                  transform: "translateX(5vw) translateY(-3vw)",
+                  transform: "translateX(10vw) translateY(-5vw)",
                 }}
                 whileInView={{
                   opacity: 1,
                   transform: "translateX(0vw) translateY(0vw)",
                 }}
-                transition={{ duration: 2, type: "spring" }}
+                transition={{ duration: 2.5, type: "spring" }}
               >
                 I am a Full stack Web Developer,
                 <br className="sm:block hidden" />
@@ -99,7 +99,7 @@ const Hero = () => {
             </div>
           </div>
           <Bubble />
-          <ComputersCanvas />
+          {/* <ComputersCanvas /> */}
         </div>
       </div>
       <div

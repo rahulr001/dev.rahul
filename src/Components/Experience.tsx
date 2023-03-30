@@ -19,13 +19,13 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#151221bf",
+        background: "#2d2e32",
         color: "#fff",
-        border: "#cd5ff8 2px solid",
+        border: "#4dba87 2px solid",
       }}
-      contentArrowStyle={{ borderRight: "17px solid  #cd5ff8" }}
+      contentArrowStyle={{ borderRight: "17px solid  #4dba87" }}
       date={experience.date}
-      iconStyle={{ background: "#f6deff" }}
+      iconStyle={{ background: "#9ca3af" }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
@@ -47,7 +47,7 @@ const ExperienceCard = ({ experience }) => {
         }}
         transition={{ duration: 2, type: "spring" }}
       >
-        <h3 className="text-[#cd5ff8] text-[24px] font-bold">
+        <h3 className="text-[#4dba87] text-[24px] font-bold">
           {experience.title}
         </h3>
         <p

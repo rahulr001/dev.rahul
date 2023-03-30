@@ -28,7 +28,7 @@ const BgParticals = () => {
             },
           },
           number: {
-            value: 100,
+            value: 20,
             density: {
               enable: false,
               value_area: 800,
@@ -38,7 +38,7 @@ const BgParticals = () => {
             value: "#ffffff",
           },
           shape: {
-            type: "star",
+            type: "circle",
             stroke: {
               width: 0,
               color: "#000000",
@@ -90,7 +90,7 @@ const BgParticals = () => {
           },
         },
         interactivity: {
-          detect_on: "canvas",
+          detect_on: "window",
           events: {
             onhover: {
               enable: false,

@@ -28,24 +28,24 @@
 }
 
 .black-gradient {
-    background: #cd5ff8;
+    background: #4dba87;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,
-            #cd5ff8,
-            #cd5ff8);
+            #4dba87,
+            #4dba87);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right,
-            #cd5ff8,
-            #cd5ff8);
+            #4dba87,
+            #4dba87);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .violet-gradient {
-    background: #cd5ff8;
-    background: linear-gradient(-90deg, #cd5ff8 0%, rgba(60, 51, 80, 0) 100%);
+    background: #4dba87;
+    background: linear-gradient(-90deg, #4dba87 0%, rgba(60, 51, 80, 0) 100%);
     background: -webkit-linear-gradient(-90deg,
-            #cd5ff8 0%,
+            #4dba87 0%,
             rgba(60, 51, 80, 0) 100%);
 }
 

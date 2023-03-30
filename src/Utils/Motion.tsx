@@ -1,14 +1,14 @@
 export const fadeIn = {
   hidden: {
     opacity: 0,
-    x: -0,
-    y: -100,
+
+    x: 200,
   },
   visible: (i = 1) => ({
     opacity: 1,
     x: 0,
-    y: 0,
-    transition: { staggerChildren: 0.13, delayChildren: 0.2 * i },
+
+    transition: { staggerChildren: 0.18, delayChildren: 0.2 * i },
   }),
 };
 
@@ -25,8 +25,8 @@ export const child = {
   },
   hidden: {
     opacity: 0,
-    x: -20,
-    y: -100,
+    x: 100,
+    y: 20,
     transition: {
       type: "spring",
       damping: 12,
@@ -37,11 +37,14 @@ export const child = {
 export const subTitleFadeIn = {
   hidden: {
     opacity: 0,
-    x: 100,
+
+    x: -0,
+    y: -50,
   },
   visible: (i = 1) => ({
     opacity: 1,
     x: 0,
+    y: 0,
     transition: { staggerChildren: 0.13, delayChildren: 0.2 * i },
   }),
 };
@@ -50,6 +53,7 @@ export const subTitleChild = {
   visible: {
     opacity: 1,
     x: 0,
+    y: 0,
     transition: {
       type: "spring",
       damping: 10,
@@ -58,7 +62,8 @@ export const subTitleChild = {
   },
   hidden: {
     opacity: 0,
-    x: 100,
+    x: -20,
+    y: -50,
     transition: {
       type: "spring",
       damping: 12,
@@ -115,7 +120,7 @@ export const swing = {
 
 export const desc = {
   hidden: {
-    y: 10,
+    y: 50,
     opacity: 0,
   },
   visible: {
@@ -124,7 +129,6 @@ export const desc = {
     transition: {
       type: "spring",
       duration: 1,
-      
     },
   },
 };

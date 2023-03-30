@@ -19,7 +19,7 @@ const Navbar = () => {
         <motion.div
           initial={{
             opacity: 0,
-            transform: "translateX(-5vw) translateY(-3vw)",
+            transform: "translateX(10vw) translateY(-3vw)",
           }}
           whileInView={{
             opacity: 1,
@@ -35,7 +35,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <p className={`${styles.navText}`} style={{ color: "#cd5ff8" }}>
+            <p className={`${styles.navText}`} style={{ color: "#4dba87" }}>
               {R}
               <span className="text-white font text-[1rm] xxs:text[4rem]">
                 {name}
