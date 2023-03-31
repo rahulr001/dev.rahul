@@ -24,6 +24,7 @@
     "react-parallax-tilt": "^1.7.115",
     "react-particles": "^2.9.3",
     "react-router-dom": "^6.8.1",
+    "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.8",
     "react-tsparticles": "^2.9.3",
     "react-vertical-timeline-component": "^3.6.0",

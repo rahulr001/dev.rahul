@@ -63,7 +63,7 @@ const ComputersCanvas = () => {
           marginLeft: isMobile ? "0vh" : "3vw",
           position: isMobile ? "absolute" : "relative",
           width: isMobile ? "100%" : "80%",
-          left: isMobile ? "-1rem" : "2rem",
+          left: isMobile ? "0rem" : "2rem",
         }}
         src={pc}
       />

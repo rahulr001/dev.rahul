@@ -35,7 +35,7 @@ const Bubble = () => {
           type: "spring",
           stiffness: 150,
           dumping: 15,
-          delay: 0.5,
+          delay: 1,
         }}
       >
         <motion.a
@@ -68,14 +68,14 @@ const Bubble = () => {
         </motion.a>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, transform: "translateY(-2vw)" }}
+        initial={{ opacity: 0, transform: "translateY(-5vw)" }}
         whileInView={{ opacity: 1, transform: "translateY(0vw)" }}
         transition={{
           duration: 2,
           type: "spring",
           stiffness: 150,
           dumping: 15,
-          delay: 0.7,
+          delay: 1.5,
         }}
       >
         <motion.a
