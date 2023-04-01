@@ -25,8 +25,7 @@ const ComputersCanvas = () => {
         // transform: "scale(1)",
         transition: {
           type: "spring",
-          stiffness: 50,
-          damping: 8,
+           
           delay: 1.5,
           duration: 5,
         },

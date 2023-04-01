@@ -43,6 +43,24 @@ export const navLinks = [
     title: "< Contact />",
   },
 ];
+export const footerLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
 
 const services = [
   {

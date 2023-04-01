@@ -61,7 +61,8 @@ const Bubble = () => {
             height: isMobile ? "13vw" : "",
             fontSize: isMobile ? "3vw" : "",
           }}
-          href="#"
+                  href="https://www.linkedin.com/in/rahul-r-1a3b24232"
+                  target="_blank"
           className="btn"
         >
           Hair Me
@@ -102,8 +103,8 @@ const Bubble = () => {
             fontSize: isMobile ? "3vw" : "",
             //   marginLeft: isMobile ? "30vw" : "",
           }}
-                  href={resume}
-                  target="_blank"
+          href={resume}
+          target="_blank"
           className="btn-1"
         >
           View Resume
