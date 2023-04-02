@@ -5,6 +5,11 @@ import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWraper } from "../Utils";
 import Zoom from "react-reveal/Zoom";
+
+// VJSZOC8VhwBq2GFje;
+// service_r7qyjpp;
+// template_b8rd9es;
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -13,8 +18,44 @@ const Contact = () => {
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
-  const handleChange = () => {};
-  const handleSubmit = () => {};  const p = "< Get in touch />";
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    emailjs
+      .send(
+        "service_r7qyjpp",
+        "template_b8rd9es",
+        {
+          from_name: form.name,
+          to_name: "Rahul",
+          from_email: form.email,
+          to_email: "rahulsquads@gmail.com",
+          message: form.message,
+        },
+        "VJSZOC8VhwBq2GFje"
+      )
+      .then(
+        () => {
+          setIsLoading(false);
+              alert("Thank you. I will get back to you as soon as possible.");
+              setForm({
+                name: "",
+                email: "",
+                message: "",
+              });
+        },
+        (error) => {
+          setIsLoading(false);
+          console.log(error);
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
+  const p = "< Get in touch />";
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-8 overflow-hidden`}
@@ -23,7 +64,6 @@ const Contact = () => {
         className="flex-[0.75] p-8 rounded-2xl "
         style={{ border: "#4dba87 2px solid", height: "95vh" }}
       >
-        
         <Zoom top cascade duration={2000}>
           <p className={styles.sectionSubText}>{p}</p>
         </Zoom>
