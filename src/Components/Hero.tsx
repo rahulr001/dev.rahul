@@ -28,12 +28,12 @@ const Hero = () => {
       className={`relative w-full  mx-auto`}
     >
       <div
-        className={`absolute inset-0 top-[110px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
+        className={`font absolute inset-0 top-[110px]  max-w-7xl mx-auto ${styles.paddingX} flex  flex-warp items-start gap-5`}
       >
         <motion.div
           initial={{
             opacity: 0,
-            transform: "translateX(-10vw) translateY(5vw)",
+            transform: "translateX(-5vw) translateY(5vw)",
           }}
           whileInView={{
             opacity: 1,
@@ -59,7 +59,7 @@ const Hero = () => {
                 transform: "translateX(0vw) translateY(0vw)",
               }}
               transition={{ duration: 2.5, type: "spring" }}
-              className={`${styles.heroHeadText} text-white `}
+              className={`${styles.heroHeadText} font text-white `}
             >
               Hi, I'm
             </motion.h1>
@@ -67,20 +67,20 @@ const Hero = () => {
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
-              className={`${styles.heroHeadText} text-white flex `}
+              className={`${styles.heroHeadText}  text-white flex `}
             >
               {name.map((name, index) => (
                 <motion.span
                   key={index}
                   variants={child}
-                  className=" text-[#4dba87]"
+                  className=" font text-[#4dba87]"
                 >
                   {name === " " ? "\u00A0" : name}
                 </motion.span>
               ))}
             </motion.div>
 
-            <div className={`${styles.heroSubText} mt-2 text-white-100`}>
+            <div className={`${styles.heroSubText}  mt-2 text-white-100`}>
               <motion.div
                 initial={{
                   opacity: 0,
@@ -91,6 +91,7 @@ const Hero = () => {
                   transform: "translateX(0vw) translateY(0vw)",
                 }}
                 transition={{ duration: 2.5, type: "spring" }}
+                className="font"
               >
                 I am a Full stack Web Developer,
                 <br className="sm:block hidden" />

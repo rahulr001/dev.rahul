@@ -14,18 +14,20 @@ import {
   titleChild,
   titleFadeIn,
 } from "../Utils/Motion";
+import Fade from "react-reveal";
+import Zoom from "react-reveal/Zoom";
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#2d2e32",
+        background: "#161b22",
         color: "#fff",
         border: "#4dba87 2px solid",
       }}
       contentArrowStyle={{ borderRight: "17px solid  #4dba87" }}
       date={experience.date}
-      iconStyle={{ background: "#9ca3af" }}
+      iconStyle={{ background: "white" }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
@@ -73,84 +75,63 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
-  const subText = [
-    "<",
-    " ",
-    "W",
-    "h",
-    "a",
-    "t",
-    " ",
-    "I",
-    " ",
-    "h",
-    "a",
-    "v",
-    "e",
-    " ",
-    "d",
-    "o",
-    "n",
-    "e",
-    " ",
-    "s",
-    "o",
-    " ",
-    "f",
-    "a",
-    "r",
-    " ",
-    "/",
-    ">",
-  ];
-  const title = [
-    "W",
-    "o",
-    "r",
-    "k",
-    " ",
-    "E",
-    "x",
-    "p",
-    "e",
-    "r",
-    "i",
-    "e",
-    "n",
-    "c",
-    "e",
-    ".",
-  ];
+  //   const subText = [
+  //     "<",
+  //     " ",
+  //     "W",
+  //     "h",
+  //     "a",
+  //     "t",
+  //     " ",
+  //     "I",
+  //     " ",
+  //     "h",
+  //     "a",
+  //     "v",
+  //     "e",
+  //     " ",
+  //     "d",
+  //     "o",
+  //     "n",
+  //     "e",
+  //     " ",
+  //     "s",
+  //     "o",
+  //     " ",
+  //     "f",
+  //     "a",
+  //     "r",
+  //     " ",
+  //     "/",
+  //     ">",
+  //   ];
+  //   const title = [
+  //     "W",
+  //     "o",
+  //     "r",
+  //     "k",
+  //     " ",
+  //     "E",
+  //     "x",
+  //     "p",
+  //     "e",
+  //     "r",
+  //     "i",
+  //     "e",
+  //     "n",
+  //     "c",
+  //     "e",
+  //     ".",
+  //   ];
+  const p = "< What I have done so far />";
   return (
     <>
-      <motion.div
-        variants={subTitleFadeIn}
-        initial="hidden"
-        whileInView="visible"
-        className="flex"
-      >
-        {subText.map((name, index) => (
-          <motion.span
-            key={index}
-            variants={subTitleChild}
-            className="  sm:text-[18px] text-[14px] secondary-color font uppercase  "
-          >
-            {name === " " ? "\u00A0" : name}
-          </motion.span>
-        ))}
-      </motion.div>
-      <motion.h2
-        variants={titleFadeIn}
-        initial="hidden"
-        whileInView="visible"
-        className={`${styles.sectionHeadText} `}
-      >
-        {title.map((name, index) => (
-          <motion.span key={index} variants={titleChild}>
-            {name === " " ? "\u00A0" : name}
-          </motion.span>
-        ))}
-      </motion.h2>
+      <Zoom top cascade duration={2000}>
+        <p className={styles.sectionSubText}>{p}</p>
+      </Zoom>
+      <Zoom top cascade duration={2000}>
+        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+      </Zoom>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

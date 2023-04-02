@@ -8,13 +8,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
     color-scheme: dark;
 }
 
 .font {
-    font-family: 'Roboto Mono', monospace !important;
+    font-family: "Poppins", sans-serif !important;
+
 }
 
 .secondary-color {

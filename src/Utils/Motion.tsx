@@ -8,7 +8,7 @@ export const fadeIn = {
     opacity: 1,
     // x: 0,
     scale: 1,
-    transition: {  staggerChildren: 0.18, delayChildren: 0.2 * i },
+    transition: { staggerChildren: 0.18, delayChildren: 0.2 * i },
   }),
 };
 
@@ -125,7 +125,7 @@ export const swing = {
 
 export const desc = {
   hidden: {
-    y: 50,
+    y: 30,
     opacity: 0,
   },
   visible: {
@@ -133,7 +133,7 @@ export const desc = {
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1,
+      duration: 4,
     },
   },
 };

@@ -6,10 +6,9 @@ const SectionsWraper = (Component, idName) =>
   function HOC() {
     return (
       <motion.section
-        variants={staggerContainer()}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 1 }}
+        initial={{ opacity: 0, transform: "translateY(20vw)" }}
+        whileInView={{ opacity: 1, transform: "translateY(0px)" }}
+        transition={{ duration:  10, type: "spring" }}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
         <span className="hash-span" id={idName}>

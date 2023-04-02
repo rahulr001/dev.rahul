@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { SectionWraper } from "../Utils";
-
+import Zoom from "react-reveal/Zoom";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -14,7 +14,7 @@ const Contact = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const handleChange = () => {};
-  const handleSubmit = () => {};
+  const handleSubmit = () => {};  const p = "< Get in touch />";
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-8 overflow-hidden`}
@@ -23,9 +23,13 @@ const Contact = () => {
         className="flex-[0.75] p-8 rounded-2xl "
         style={{ border: "#4dba87 2px solid", height: "95vh" }}
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        
+        <Zoom top cascade duration={2000}>
+          <p className={styles.sectionSubText}>{p}</p>
+        </Zoom>
+        <Zoom top cascade duration={2000}>
+          <h2 className={styles.sectionHeadText}>Contact.</h2>
+        </Zoom>
         <form
           ref={formRef}
           onSubmit={handleSubmit}

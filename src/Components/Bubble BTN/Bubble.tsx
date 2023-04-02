@@ -61,9 +61,9 @@ const Bubble = () => {
             height: isMobile ? "13vw" : "",
             fontSize: isMobile ? "3vw" : "",
           }}
-                  href="https://www.linkedin.com/in/rahul-r-1a3b24232"
-                  target="_blank"
-          className="btn"
+          href="https://www.linkedin.com/in/rahul-r-1a3b24232"
+          target="_blank"
+          className="btn font"
         >
           Hair Me
         </motion.a>
@@ -105,7 +105,7 @@ const Bubble = () => {
           }}
           href={resume}
           target="_blank"
-          className="btn-1"
+          className="btn-1 font"
         >
           View Resume
         </motion.a>

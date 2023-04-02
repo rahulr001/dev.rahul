@@ -1,9 +1,9 @@
- 
 import { technologies } from "../Constants";
- 
+
 import { SectionWraper } from "../Utils";
 import { motion } from "framer-motion";
 import { swing } from "../Utils/Motion";
+import Zoom from "react-reveal/Zoom";
 const Tech = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
@@ -14,7 +14,9 @@ const Tech = () => {
           className="w-20 h-20 p-2 flex justify-center items-center  rounded-full bg-[#fbf2ff]"
           key={technology.name}
         >
-          <img className="tech p-1" alt="img" src={technology.icon} />
+          <Zoom cascade duration={2000}>
+            <img className="tech p-1" alt="img" src={technology.icon} />
+          </Zoom>
         </motion.div>
       ))}
     </div>

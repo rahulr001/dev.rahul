@@ -13,6 +13,8 @@ import {
   titleChild,
   desc,
 } from "../Utils/Motion";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
     perspective={2000}
@@ -53,61 +55,42 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
-  const subText = [
-    "<",
-    " ",
-    "I",
-    "n",
-    "t",
-    "r",
-    "o",
-    "d",
-    "u",
-    "c",
-    "t",
-    "i",
-    "o",
-    "n",
-    " ",
-    "/>",
-  ];
+  //   const subText = [
+  //     "<",
+  //     " ",
+  //     "I",
+  //     "n",
+  //     "t",
+  //     "r",
+  //     "o",
+  //     "d",
+  //     "u",
+  //     "c",
+  //     "t",
+  //     "i",
+  //     "o",
+  //     "n",
+  //     " ",
+  //     "/>",
+  //   ];
   const title = ["O", "v", "e", "r", "v", "i", "e", "w", "."];
+  const p = "< Introduction />";
   return (
     <>
-      <motion.div
-        variants={subTitleFadeIn}
-        initial="hidden"
-        whileInView="visible"
-        className="flex"
-      >
-        {subText.map((name, index) => (
-          <motion.span
-            key={index}
-            variants={subTitleChild}
-            className=" font sm:text-[18px] text-[14px] secondary-color uppercase  "
-          >
-            {name === " " ? "\u00A0" : name}
-          </motion.span>
-        ))}
-      </motion.div>
-      <motion.h2
-        variants={titleFadeIn}
-        initial="hidden"
-        whileInView="visible"
-        className={`${styles.sectionHeadText} `}
-      >
-        {title.map((name, index) => (
-          <motion.span key={index} variants={titleChild}>
-            {name === " " ? "\u00A0" : name}
-          </motion.span>
-        ))}
-      </motion.h2>
+      <Zoom top cascade duration={2000}>
+        <span className="   sm:text-[18px] text-[14px] secondary-color uppercase">
+          {p}
+        </span>
+      </Zoom>
+      <Zoom top cascade duration={2000}>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </Zoom>
 
       <motion.div
         variants={desc}
         initial="hidden"
         whileInView="visible"
-        className="mt-4 text-justify secondary-color font text-[17px] max-w-7xl leading-[30px]"
+        className="mt-4 text-justify secondary-color  text-[17px] max-w-7xl leading-[30px]"
       >
         I'm a skilled software developer with experience in Python, Django,
         HTML5, CSS3, TypeScript, JavaScript, React, MySQL, PostgreSQL and AWS.

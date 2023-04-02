@@ -37,7 +37,7 @@ const Navbar = () => {
           >
             <p className={`${styles.navText}`} style={{ color: "#4dba87" }}>
               {R}
-              <span className="text-white font text-[1rm] xxs:text[4rem]">
+              <span className="text-white  text-[1rm] xxs:text[4rem]">
                 {name}
               </span>
             </p>
@@ -61,9 +61,7 @@ const Navbar = () => {
               } font-medium  p-3   hover:text-[white]`}
               onClick={() => setActive(link.title)}
             >
-              <a className="font" href={`#${link.id}`}>
-                {link.title}
-              </a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </motion.li>
           ))}
         </ul>
@@ -84,7 +82,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={` font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {

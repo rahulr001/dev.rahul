@@ -10,6 +10,7 @@ import {
   titleFadeIn,
 } from "../../Utils/Motion";
 import { styles } from "../../style";
+import Zoom from "react-reveal/Zoom";
 const Statics = () => {
   useEffect(() => {
     GitHubCalendar(".calendar", "rahulr001", {
@@ -53,39 +54,20 @@ const Statics = () => {
     "t",
     "i",
     "o",
-      "n",
-    "."
+    "n",
+    ".",
   ];
+  const p = " < DAYS I CODE />";
   return (
     <>
-      <motion.div
-        variants={subTitleFadeIn}
-        initial="hidden"
-        whileInView="visible"
-        className="flex"
-      >
-        {subText.map((name, index) => (
-          <motion.span
-            key={index}
-            variants={subTitleChild}
-            className="  sm:text-[18px] text-[14px] secondary-color font uppercase  "
-          >
-            {name === " " ? "\u00A0" : name}
-          </motion.span>
-        ))}
-      </motion.div>
-      <motion.h2
-        variants={titleFadeIn}
-        initial="hidden"
-        whileInView="visible"
-        className={`${styles.sectionHeadText} `}
-      >
-        {title.map((name, index) => (
-          <motion.span key={index} variants={titleChild}>
-            {name === " " ? "\u00A0" : name}
-          </motion.span>
-        ))}
-      </motion.h2>
+      <Zoom top cascade duration={2000}>
+        <span className="   sm:text-[18px] text-[14px] secondary-color uppercase">
+          {p}
+        </span>
+      </Zoom>
+      <Zoom top cascade duration={2000}>
+        <h2 className={styles.sectionHeadText}>GitHub Contribution.</h2>
+      </Zoom>
       <div className="calendar"></div>;
     </>
   );
