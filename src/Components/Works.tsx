@@ -39,7 +39,7 @@ const ProjectCard = ({
         className="bg-tertiary p-5  rounded-2xl sm:w-[360px] w-full h-[31rem] flex flex-col justify-around"
         style={{ border: "#4dba87 2px solid" }}
       >
-        <div className="relative w-full h-[150px]">
+        <div className="relative w-full h-[170px]">
           <img
             src={image}
             alt="project_image"
