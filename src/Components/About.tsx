@@ -94,7 +94,7 @@ const About = () => {
       >
         I'm a skilled software developer with experience in Python, Django,
         HTML5, CSS3, TypeScript, JavaScript, React, MySQL, PostgreSQL and AWS.
-        And also Experienced in developing Font-end web Applications and
+        And also Experienced in developing Front-end web Applications and
         RESTfull API's. I'm a quick learner and collaborate closely with clients
         to create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!

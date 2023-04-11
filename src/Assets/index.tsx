@@ -47,8 +47,12 @@ import portfolioReact from "./portfolio-react.png";
 import portfolioAngular from "./portfolioAngular.png";
 import questTracler from "./questtracker.png";
 import treasureHunt from "./treasurehunt.png";
+import math from "./math.png";
+import hotel from "./hotel.png";
 
 export {
+  hotel,
+  math,
   portfolioAngular,
   portfolioReact,
   questTracler,

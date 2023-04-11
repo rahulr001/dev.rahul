@@ -23,6 +23,8 @@ import {
   portfolioReact,
   questTracler,
   treasureHunt,
+  math,
+  hotel,
 } from "../Assets";
 
 export const navLinks = [
@@ -247,7 +249,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "tripguide",
+    image: hotel,
     source_code_link:
       "https://github.com/rahulr001/Hotel-Reservation-Django-React.git",
   },
@@ -269,7 +271,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "tripguide",
+    image: math,
     source_code_link: "https://github.com/rahulr001/Math-Flash-Cards.git",
   },
   {

@@ -65,7 +65,7 @@ const Bubble = () => {
           target="_blank"
           className="btn font"
         >
-          Hair Me
+          Hire Me
         </motion.a>
       </motion.div>
       <motion.div
