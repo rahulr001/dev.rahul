@@ -25,6 +25,10 @@ import {
   treasureHunt,
   math,
   hotel,
+  propertyHub,
+  enquiryHub,
+  eCommerce,
+  docker,
 } from "../Assets";
 
 export const navLinks = [
@@ -138,6 +142,10 @@ const technologies = [
     icon: github,
   },
   {
+    name: "Docker",
+    icon: docker,
+  },
+  {
     name: "figma",
     icon: figma,
   },
@@ -188,9 +196,73 @@ const experiences = [
 
 const projects = [
   {
+    name: "Property Hub",
+    description:
+      "The Property Hub is an innovative online platform designed to revolutionize the way individuals and businesses engage with the real estate market. It serves as a comprehensive hub for all property-related needs, offering a wide range of features and services to simplify the process of buying, selling, renting, and managing properties.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+    ],
+    image: propertyHub,
+    source_code_link: "https://github.com/rahulr001/Property-hub-IGS.git",
+  },
+  {
+    name: "Enquiry Hub",
+    description:
+      "The Enquiry Hub is an innovative solution aimed at enhancing customer inquiry management and support systems for businesses. It is designed to streamline the process of handling customer queries, improving response times, and ultimately enhancing customer satisfaction.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "green-text-gradient",
+      },
+    ],
+    image: enquiryHub,
+    source_code_link: "https://github.com/rahulr001/Enquiry-hub-IGS.git",
+  },
+  {
+    name: "E-Commerce",
+    description:
+      "Emporio is an e-commerce website development project aimed at creating an online fashion store that offers a wide range of trendy clothing, footwear, and accessories for men and women. The project aims to provide an intuitive and user-friendly platform for customers to browse, select, and purchase fashionable items from the comfort of their homes.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+    ],
+    image: eCommerce,
+    source_code_link:
+      "https://github.com/rahulr001/E-Commerse-React-Django.git",
+  },
+  {
     name: "PortFolio-React",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Portfolio website with track of my career journey, projects, open-source contribution and much more.",
     tags: [
       {
         name: "react",

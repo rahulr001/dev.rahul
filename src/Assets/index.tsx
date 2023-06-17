@@ -40,6 +40,8 @@ const postgresql =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg";
 const django =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg";
+const docker =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg";
 
 import resume from "./Resume.pdf";
 
@@ -49,8 +51,14 @@ import questTracler from "./questtracker.png";
 import treasureHunt from "./treasurehunt.png";
 import math from "./math.png";
 import hotel from "./hotel.png";
+import propertyHub from "./propertyHub.png";
+import eCommerce from "./eCommerce.png";
+import enquiryHub from "./enquiryHub.png";
 
 export {
+  propertyHub,
+  eCommerce,
+  enquiryHub,
   hotel,
   math,
   portfolioAngular,
@@ -68,6 +76,7 @@ export {
   close,
   css,
   figma,
+  docker,
   angular,
   django,
   mysql,
