@@ -61,7 +61,7 @@ const Bubble = () => {
             height: isMobile ? "13vw" : "",
             fontSize: isMobile ? "3vw" : "",
           }}
-          href="https://www.linkedin.com/in/rahul001"
+          href="https://www.linkedin.com/in/rahulr001"
           target="_blank"
           className="btn font"
         >
@@ -88,7 +88,7 @@ const Bubble = () => {
             scale: [1, 0.9, 1],
             transition: {
               type: "spring",
-              duration: 4,
+              duration: 3,
               stiffness: 100,
               damping: 12,
               repeat: Infinity,

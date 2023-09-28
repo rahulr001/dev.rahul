@@ -47,7 +47,7 @@ const ExperienceCard = ({ experience }) => {
           opacity: 1,
           transform: "  translateY(0vw)",
         }}
-        transition={{ duration: 2, type: "spring" }}
+        transition={{ duration: 1.5, type: "spring" }}
       >
         <h3 className="text-[#4dba87] text-[24px] font-bold">
           {experience.title}
@@ -126,10 +126,10 @@ const Experience = () => {
   const p = "< What I have done so far />";
   return (
     <>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <p className={styles.sectionSubText}>{p}</p>
       </Zoom>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </Zoom>
 

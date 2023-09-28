@@ -133,7 +133,7 @@ export const desc = {
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 4,
+      duration: 2,
     },
   },
 };

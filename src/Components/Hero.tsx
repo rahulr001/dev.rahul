@@ -39,7 +39,7 @@ const Hero = () => {
             opacity: 1,
             transform: "translateX(0vw) translateY(0vw)",
           }}
-          transition={{ duration: 2.5, type: "spring" }}
+          transition={{ duration: 2, type: "spring" }}
         >
           <div className="flex flex-col justify-center items-center  ">
             <div className="w-5 h-5 rounded-full bg-[#4dba87]" />
@@ -58,7 +58,7 @@ const Hero = () => {
                 opacity: 1,
                 transform: "translateX(0vw) translateY(0vw)",
               }}
-              transition={{ duration: 2.5, type: "spring" }}
+              transition={{ duration: 2, type: "spring" }}
               className={`${styles.heroHeadText} font text-white `}
             >
               Hi, I'm
@@ -90,7 +90,7 @@ const Hero = () => {
                   opacity: 1,
                   transform: "translateX(0vw) translateY(0vw)",
                 }}
-                transition={{ duration: 2.5, type: "spring" }}
+                transition={{ duration: 2, type: "spring" }}
                 className="font"
               >
                 I am a Full stack Web Developer,

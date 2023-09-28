@@ -25,7 +25,7 @@ const Navbar = () => {
             opacity: 1,
             transform: "translateX(0vw) translateY(0vw)",
           }}
-          transition={{ duration: 1.5, type: "spring" }}
+          transition={{ duration: 1, type: "spring" }}
         >
           <Link
             to="#"
@@ -54,7 +54,7 @@ const Navbar = () => {
                 opacity: 1,
                 transform: "translateX(0vw) translateY(0vw)",
               }}
-              transition={{ duration: index * 1.2, type: "spring" }}
+              transition={{ duration: index * 1, type: "spring" }}
               key={link.id}
               className={`${
                 active === link.title ? "text-[white]" : "text-secondary"

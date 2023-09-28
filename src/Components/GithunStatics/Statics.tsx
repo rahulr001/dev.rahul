@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import GitHubCalendar from "github-calendar";
+// import GitHubCalendar from "github-calendar";
 import { SectionWraper } from "../../Utils";
 import "./Statics.css";
 import { motion } from "framer-motion";
@@ -11,13 +11,16 @@ import {
 } from "../../Utils/Motion";
 import { styles } from "../../style";
 import Zoom from "react-reveal/Zoom";
+import GitHubCalendar from 'react-github-calendar';
+
+
 const Statics = () => {
-  useEffect(() => {
-    GitHubCalendar(".calendar", "rahulr001", {
-      responsive: true,
-      tooltip: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   GitHubCalendar(".calendar", "rahulr001", {
+  //     responsive: true,
+  //     tooltip: true,
+  //   });
+  // }, []);
   const subText = [
     "<",
     "D",
@@ -60,15 +63,15 @@ const Statics = () => {
   const p = " < DAYS I CODE />";
   return (
     <>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <span className="   sm:text-[18px] text-[14px] secondary-color uppercase">
           {p}
         </span>
       </Zoom>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <h2 className={styles.sectionHeadText}>GitHub Contribution.</h2>
       </Zoom>
-      <div className="calendar"></div>;
+      <div className="calendar"><GitHubCalendar blockSize={18} username="rahulr001" /></div>;
     </>
   );
 };

@@ -19,7 +19,7 @@ const Footer = () => {
       whileInView={{
         opacity: 1,
       }}
-      transition={{ duration: 2.5, type: "spring" }}
+      transition={{ duration: 2, type: "spring" }}
       className={`${styles.paddingX} w-full flex flex-col items-center py-5 pb-0  top-0 z-20 bg-primary`}
     >
       <div className="w-full flex flex-col justify-between mx-auto max-w-7xl items-center">

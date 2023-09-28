@@ -37,6 +37,9 @@ rect.ContributionCalendar-day[data-level='4'] {
     min-height: 243px;
     text-align: center;
     margin-top: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .calendar-graph text.wday,

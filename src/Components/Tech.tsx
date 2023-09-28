@@ -14,7 +14,7 @@ const Tech = () => {
           className="w-20 h-20 p-2 flex justify-center items-center  rounded-full bg-[#fbf2ff]"
           key={technology.name}
         >
-          <Zoom cascade duration={2000}>
+          <Zoom cascade duration={1000}>
             <img className="tech p-1" alt="img" src={technology.icon} />
           </Zoom>
         </motion.div>

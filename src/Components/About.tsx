@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon }) => (
     <motion.div
       initial={{ opacity: 0, transform: "translateX(-20vw)" }}
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
-      transition={{ duration: index * 2, type: "spring" }}
+      transition={{ duration: index * 1.5, type: "spring" }}
       className="w-full p-[1px] rounded-[20px] shadow-card"
       style={{ border: "#4dba87 2px solid" }}
     >
@@ -77,12 +77,12 @@ const About = () => {
   const p = "< Introduction />";
   return (
     <>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <span className="   sm:text-[18px] text-[14px] secondary-color uppercase">
           {p}
         </span>
       </Zoom>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </Zoom>
 

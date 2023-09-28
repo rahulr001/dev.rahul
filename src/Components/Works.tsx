@@ -27,7 +27,7 @@ const ProjectCard = ({
     <motion.div
       initial={{ opacity: 0, transform: "translateX(-20vw)" }}
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
-      transition={{ duration: index * 2, type: "spring" }}
+      transition={{ duration: index * 1.5, type: "spring" }}
     >
       <Tilt
         scale={1.1}
@@ -87,10 +87,10 @@ const Works = () => {
   const p = "< MY WORK />";
   return (
     <>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <p className={styles.sectionSubText}>{p}</p>
       </Zoom>
-      <Zoom top cascade duration={2000}>
+      <Zoom top cascade duration={1000}>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </Zoom>
 
