@@ -77,12 +77,12 @@ const About = () => {
   const p = "< Introduction />";
   return (
     <>
-      <Zoom top cascade duration={1000}>
+      <Zoom top cascade duration={1500}>
         <span className="   sm:text-[18px] text-[14px] secondary-color uppercase">
           {p}
         </span>
       </Zoom>
-      <Zoom top cascade duration={1000}>
+      <Zoom top cascade duration={1500}>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </Zoom>
 

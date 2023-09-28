@@ -87,10 +87,10 @@ const Works = () => {
   const p = "< MY WORK />";
   return (
     <>
-      <Zoom top cascade duration={1000}>
+      <Zoom top cascade duration={1500}>
         <p className={styles.sectionSubText}>{p}</p>
       </Zoom>
-      <Zoom top cascade duration={1000}>
+      <Zoom top cascade duration={1500}>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </Zoom>
 

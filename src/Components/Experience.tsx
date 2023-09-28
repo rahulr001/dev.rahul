@@ -126,10 +126,10 @@ const Experience = () => {
   const p = "< What I have done so far />";
   return (
     <>
-      <Zoom top cascade duration={1000}>
+      <Zoom top cascade duration={1500}>
         <p className={styles.sectionSubText}>{p}</p>
       </Zoom>
-      <Zoom top cascade duration={1000}>
+      <Zoom top cascade duration={1500}>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </Zoom>
 

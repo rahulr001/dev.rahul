@@ -64,10 +64,10 @@ const Contact = () => {
         className="flex-[0.75] p-8 rounded-2xl "
         style={{ border: "#4dba87 2px solid", height: "95vh" }}
       >
-        <Zoom top cascade duration={1000}>
+        <Zoom top cascade duration={1500}>
           <p className={styles.sectionSubText}>{p}</p>
         </Zoom>
-        <Zoom top cascade duration={1000}>
+        <Zoom top cascade duration={1500}>
           <h2 className={styles.sectionHeadText}>Contact.</h2>
         </Zoom>
         <form
