@@ -5,6 +5,7 @@ import close from "./close.svg";
 import infox from "./company/infox_logo.png";
 import intellecto from "./company/intellecto.png";
 import shiash from "./company/shiash.png";
+import active from "./company/active.jpeg"
 
 import frontend from "./front-end.png";
 import backend from "./back-end.png";
@@ -90,5 +91,6 @@ export {
   intellecto,
   shiash,
   infox,
+  active,
   python,
 };

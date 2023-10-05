@@ -21,6 +21,7 @@
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^4.0.1",
     "react-github-calender": "^1.1.0",
     "react-parallax-tilt": "^1.7.115",
     "react-particles": "^2.9.3",

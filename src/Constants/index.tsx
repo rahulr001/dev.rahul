@@ -19,6 +19,7 @@ import {
   shiash,
   intellecto,
   infox,
+  active,
   portfolioAngular,
   portfolioReact,
   questTracler,
@@ -153,11 +154,25 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Python Developer",
+    company_name: "Tech Active Solutions (India) Private Limited",
+    icon: active,
+    iconBg: "#ffff",
+    date: "{ July 2023 - Present }",
+    points: [
+      "Led the architectural overhaul, breaking down the existing monolithic system into a Microservices-based architecture. This restructuring resulted in improved scalability, flexibility, and maintainability.",
+      "Implemented robust queue management to facilitate asynchronous communication between microservices, ensuring seamless data flow and fault tolerance.",
+      "Utilized a diverse technology stack, including Python, MongoDB, Elastic Search, MySQL, and PHP, to build and support various components of the system.",
+      "Managed data storage and retrieval by integrating MongoDB, Elastic Search, MySQL, and other database solutions to ensure efficient data handling.",
+      "Successfully refactored the legacy monolithic application into microservices, improving code maintainability and facilitating independent development and deployment of individual services.",
+    ],
+  },
+  {
     title: "Software Engineer",
     company_name: "Intellecto Global Services",
     icon: intellecto,
     iconBg: "#ffff",
-    date: "{ November 2022 - Present }",
+    date: "{ November 2022 - June 2023 }",
     points: [
       "Built RESTful APIs that served data to the JavaScript front-end, based on dynamically chosen user inputs that handled over 5000 concurrent users.",
       "Partnered with a developer to implement RESTful APIs in Django, enabling analytics team to increase reporting speed by 14%.",
