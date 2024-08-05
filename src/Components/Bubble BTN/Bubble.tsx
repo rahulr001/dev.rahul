@@ -57,9 +57,10 @@ const Bubble = () => {
             //   position: isMobile ? "relative" : "absolute",
             //   top: isMobile ? "13vh" : "",
             //   left: isMobile ? "10vh" : "",
+            textAlign: 'center',
             width: isMobile ? "13vw" : "",
             height: isMobile ? "13vw" : "",
-            fontSize: isMobile ? "3vw" : "",
+            fontSize: isMobile ? "3vw" : "1vw",
           }}
           href="https://www.linkedin.com/in/rahulr001"
           target="_blank"
@@ -107,7 +108,7 @@ const Bubble = () => {
           target="_blank"
           className="btn-1 font"
         >
-          View Resume
+          Resume
         </motion.a>
       </motion.div>
     </div>

@@ -9,7 +9,7 @@ import active from "./company/active.jpeg"
 
 import frontend from "./front-end.png";
 import backend from "./back-end.png";
-import uiux from "./uiux.png";
+import aiml from "./ai-ml.png";
 
 import pc from "./pc.png";
 
@@ -71,7 +71,7 @@ export {
   logo,
   backend,
   frontend,
-  uiux,
+  aiml,
   github,
   menu,
   close,

@@ -1,6 +1,6 @@
 import {
   frontend,
-  uiux,
+  aiml,
   backend,
   javascript,
   typescript,
@@ -75,16 +75,16 @@ const services = [
     icon: python,
   },
   {
-    title: "Web Developer",
-    icon: frontend,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "UI/UX Developer",
-    icon: uiux,
+    title: "AI/ML Engineer",
+    icon: aiml,
+  },
+  {
+    title: "Web Developer",
+    icon: frontend,
   },
 ];
 
